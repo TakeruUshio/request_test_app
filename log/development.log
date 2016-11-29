@@ -1,0 +1,1726 @@
+# Logfile created on 2015-10-19 10:24:58 +0900 by logger.rb/47272
+I, [2015-10-19T10:25:01.501477 #92910]  INFO -- : Started GET "/" for ::1 at 2015-10-19 10:25:01 +0900
+F, [2015-10-19T10:25:01.639727 #92910] FATAL -- : 
+Gem::LoadError (Specified 'mysql2' for database adapter, but the gem is not loaded. Add `gem 'mysql2'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.2.4) lib/active_record/connection_adapters/connection_specification.rb:177:in `rescue in spec'
+  activerecord (4.2.4) lib/active_record/connection_adapters/connection_specification.rb:174:in `spec'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.2.4) lib/active_record/railtie.rb:120:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.2.4) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.2.4) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.2.4) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.2.4) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.2.4) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.2.4) lib/active_record/base.rb:315:in `<module:ActiveRecord>'
+  activerecord (4.2.4) lib/active_record/base.rb:26:in `<top (required)>'
+  activerecord (4.2.4) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.4) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  magellan-rails (0.2.4) lib/magellan/extentions/rails/application.rb:41:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/takeru/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/takeru/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/takeru/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+I, [2015-10-19T10:25:01.700516 #92910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+I, [2015-10-19T10:25:01.717609 #92910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+I, [2015-10-19T10:25:01.731888 #92910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2015-10-19T10:25:01.732117 #92910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.4ms)
+I, [2015-10-19T10:28:59.998366 #93011]  INFO -- : Started GET "/" for ::1 at 2015-10-19 10:28:59 +0900
+I, [2015-10-19T10:29:00.752245 #93011]  INFO -- : Processing by Rails::WelcomeController#index as HTML
+I, [2015-10-19T10:29:00.777756 #93011]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+I, [2015-10-19T10:29:00.778393 #93011]  INFO -- : Completed 200 OK in 26ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+E, [2016-11-28T11:03:53.085030 #43635] ERROR -- : Mysql2::Error: Table 'performance_schema.session_variables' doesn't exist: SHOW VARIABLES LIKE 'character_set_database'
+I, [2016-11-28T17:42:06.191294 #5606]  INFO -- : Migrating to CreateBooks (20141217072335)
+W, [2016-11-28T17:42:06.231863 #5606]  WARN -- : DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /Users/takeru/Codes/magellan-functional-test/workers/magellan-rails-http-cloudsql/db/migrate/20141217072335_create_books.rb:6)
+I, [2016-11-28T17:42:55.173626 #5627]  INFO -- : Started GET "/" for ::1 at 2016-11-28 17:42:55 +0900
+I, [2016-11-28T17:42:55.378693 #5627]  INFO -- : Processing by Rails::WelcomeController#index as HTML
+I, [2016-11-28T17:42:55.405223 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-4.2.4/lib/rails/templates/rails/welcome/index.html.erb (6.2ms)
+I, [2016-11-28T17:42:55.405508 #5627]  INFO -- : Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+I, [2016-11-28T17:43:00.131143 #5627]  INFO -- : Started GET "/books" for ::1 at 2016-11-28 17:43:00 +0900
+I, [2016-11-28T17:43:00.183866 #5627]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-28T17:43:00.197254 #5627]  INFO -- : Completed 200 OK in 13ms (Views: 1.1ms | ActiveRecord: 0.8ms)
+I, [2016-11-28T17:45:24.774236 #5627]  INFO -- : Started GET "/books" for ::1 at 2016-11-28 17:45:24 +0900
+I, [2016-11-28T17:45:24.775819 #5627]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-28T17:45:24.776814 #5627]  INFO -- : Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+I, [2016-11-28T17:46:17.904863 #5627]  INFO -- : Started POST "/books" for ::1 at 2016-11-28 17:46:17 +0900
+I, [2016-11-28T17:46:17.933554 #5627]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-28T17:46:17.933615 #5627]  INFO -- :   Parameters: {"title"=>"sample"}
+I, [2016-11-28T17:46:17.934089 #5627]  INFO -- : Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+F, [2016-11-28T17:46:17.934800 #5627] FATAL -- : 
+ActionController::ParameterMissing (param is missing or the value is empty: book):
+  app/controllers/books_controller.rb:54:in `book_params'
+  app/controllers/books_controller.rb:21:in `create'
+
+
+I, [2016-11-28T17:46:18.026533 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+I, [2016-11-28T17:46:18.045213 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+I, [2016-11-28T17:46:18.060842 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2016-11-28T17:46:18.060989 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.2ms)
+I, [2016-11-28T17:50:18.173488 #5627]  INFO -- : Started POST "/books" for ::1 at 2016-11-28 17:50:18 +0900
+I, [2016-11-28T17:50:18.175729 #5627]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-28T17:50:18.175821 #5627]  INFO -- :   Parameters: {"book"=>{"title"=>"sample"}}
+I, [2016-11-28T17:50:18.186779 #5627]  INFO -- : Completed 201 Created in 11ms (Views: 1.0ms | ActiveRecord: 2.3ms)
+I, [2016-11-28T17:50:28.201842 #5627]  INFO -- : Started GET "/books" for ::1 at 2016-11-28 17:50:28 +0900
+I, [2016-11-28T17:50:28.203311 #5627]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-28T17:50:28.204511 #5627]  INFO -- : Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+I, [2016-11-28T17:51:30.975833 #5627]  INFO -- : Started GET "/books/1.json" for ::1 at 2016-11-28 17:51:30 +0900
+I, [2016-11-28T17:51:30.977936 #5627]  INFO -- : Processing by BooksController#show as JSON
+I, [2016-11-28T17:51:30.978061 #5627]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2016-11-28T17:51:31.009298 #5627]  INFO -- : Completed 200 OK in 31ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+I, [2016-11-28T17:51:51.889601 #5627]  INFO -- : Started PUT "/books/1.json" for ::1 at 2016-11-28 17:51:51 +0900
+I, [2016-11-28T17:51:51.892585 #5627]  INFO -- : Processing by BooksController#update as JSON
+I, [2016-11-28T17:51:51.892676 #5627]  INFO -- :   Parameters: {"book"=>{"title"=>"sample2"}, "id"=>"1"}
+I, [2016-11-28T17:51:51.896780 #5627]  INFO -- : Completed 204 No Content in 4ms (ActiveRecord: 1.9ms)
+I, [2016-11-28T17:51:56.953548 #5627]  INFO -- : Started GET "/books" for ::1 at 2016-11-28 17:51:56 +0900
+I, [2016-11-28T17:51:56.955694 #5627]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-28T17:51:56.956831 #5627]  INFO -- : Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+I, [2016-11-28T17:52:08.986608 #5627]  INFO -- : Started GET "/books" for ::1 at 2016-11-28 17:52:08 +0900
+I, [2016-11-28T17:52:08.988063 #5627]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-28T17:52:08.989231 #5627]  INFO -- : Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+I, [2016-11-28T17:52:36.431333 #5627]  INFO -- : Started GET "/books/1.json" for ::1 at 2016-11-28 17:52:36 +0900
+I, [2016-11-28T17:52:36.432769 #5627]  INFO -- : Processing by BooksController#show as JSON
+I, [2016-11-28T17:52:36.432842 #5627]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2016-11-28T17:52:36.434025 #5627]  INFO -- : Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+I, [2016-11-28T17:53:02.731713 #5627]  INFO -- : Started DELETE "/books/1.json" for ::1 at 2016-11-28 17:53:02 +0900
+I, [2016-11-28T17:53:02.733246 #5627]  INFO -- : Processing by BooksController#destroy as JSON
+I, [2016-11-28T17:53:02.733297 #5627]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2016-11-28T17:53:02.736414 #5627]  INFO -- : Completed 204 No Content in 3ms (ActiveRecord: 1.8ms)
+I, [2016-11-28T17:53:09.099963 #5627]  INFO -- : Started GET "/books" for ::1 at 2016-11-28 17:53:09 +0900
+I, [2016-11-28T17:53:09.101603 #5627]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-28T17:53:09.102447 #5627]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+I, [2016-11-29T09:15:26.222926 #5627]  INFO -- : Started GET "/" for ::1 at 2016-11-29 09:15:26 +0900
+I, [2016-11-29T09:15:26.298053 #5627]  INFO -- : Processing by Rails::WelcomeController#index as HTML
+I, [2016-11-29T09:15:26.360245 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-4.2.4/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+I, [2016-11-29T09:15:26.360539 #5627]  INFO -- : Completed 200 OK in 62ms (Views: 62.1ms | ActiveRecord: 0.0ms)
+I, [2016-11-29T09:15:31.748951 #5627]  INFO -- : Started GET "/books" for ::1 at 2016-11-29 09:15:31 +0900
+I, [2016-11-29T09:15:31.750702 #5627]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T09:15:31.751689 #5627]  INFO -- : Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T09:15:50.953408 #5627]  INFO -- : Started POST "/books" for ::1 at 2016-11-29 09:15:50 +0900
+I, [2016-11-29T09:15:50.954927 #5627]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T09:15:50.954979 #5627]  INFO -- :   Parameters: {"book"=>{"title"=>"sample"}}
+I, [2016-11-29T09:15:50.958519 #5627]  INFO -- : Completed 201 Created in 3ms (Views: 0.6ms | ActiveRecord: 1.4ms)
+I, [2016-11-29T09:15:53.355391 #5627]  INFO -- : Started POST "/books" for ::1 at 2016-11-29 09:15:53 +0900
+I, [2016-11-29T09:15:53.357568 #5627]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T09:15:53.357696 #5627]  INFO -- :   Parameters: {"book"=>{"title"=>"sample"}}
+I, [2016-11-29T09:15:53.361355 #5627]  INFO -- : Completed 201 Created in 3ms (Views: 0.7ms | ActiveRecord: 1.1ms)
+I, [2016-11-29T09:15:54.192568 #5627]  INFO -- : Started POST "/books" for ::1 at 2016-11-29 09:15:54 +0900
+I, [2016-11-29T09:15:54.194151 #5627]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T09:15:54.194234 #5627]  INFO -- :   Parameters: {"book"=>{"title"=>"sample"}}
+I, [2016-11-29T09:15:54.200076 #5627]  INFO -- : Completed 201 Created in 6ms (Views: 0.6ms | ActiveRecord: 2.4ms)
+I, [2016-11-29T09:16:08.505205 #5627]  INFO -- : Started GET "/books" for ::1 at 2016-11-29 09:16:08 +0900
+I, [2016-11-29T09:16:08.507486 #5627]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T09:16:08.509590 #5627]  INFO -- : Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T09:16:15.376978 #5627]  INFO -- : Started DELETE "/books/2.json" for ::1 at 2016-11-29 09:16:15 +0900
+I, [2016-11-29T09:16:15.379262 #5627]  INFO -- : Processing by BooksController#destroy as JSON
+I, [2016-11-29T09:16:15.379357 #5627]  INFO -- :   Parameters: {"id"=>"2"}
+I, [2016-11-29T09:16:15.396109 #5627]  INFO -- : Completed 204 No Content in 17ms (ActiveRecord: 15.0ms)
+I, [2016-11-29T09:16:19.268103 #5627]  INFO -- : Started GET "/books" for ::1 at 2016-11-29 09:16:19 +0900
+I, [2016-11-29T09:16:19.270021 #5627]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T09:16:19.271373 #5627]  INFO -- : Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T09:16:29.753334 #5627]  INFO -- : Started DELETE "/books?id=3" for ::1 at 2016-11-29 09:16:29 +0900
+F, [2016-11-29T09:16:29.755235 #5627] FATAL -- : 
+ActionController::RoutingError (No route matches [DELETE] "/books"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  magellan-rails (0.2.4) lib/magellan/extentions/rails/application.rb:41:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+I, [2016-11-29T09:16:30.141826 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+I, [2016-11-29T09:16:30.356820 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+I, [2016-11-29T09:16:30.431768 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (58.0ms)
+I, [2016-11-29T09:16:30.447817 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2016-11-29T09:16:30.447978 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (323.5ms)
+I, [2016-11-29T09:16:36.157088 #5627]  INFO -- : Started GET "/books" for ::1 at 2016-11-29 09:16:36 +0900
+I, [2016-11-29T09:16:36.158926 #5627]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T09:16:36.160317 #5627]  INFO -- : Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T09:16:38.596610 #5627]  INFO -- : Started GET "/books" for ::1 at 2016-11-29 09:16:38 +0900
+I, [2016-11-29T09:16:38.598645 #5627]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T09:16:38.599935 #5627]  INFO -- : Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T09:26:35.241682 #5627]  INFO -- : Started DELETE "/books/3" for ::1 at 2016-11-29 09:26:35 +0900
+I, [2016-11-29T09:26:35.243203 #5627]  INFO -- : Processing by BooksController#destroy as */*
+I, [2016-11-29T09:26:35.243253 #5627]  INFO -- :   Parameters: {"id"=>"3"}
+I, [2016-11-29T09:26:35.245212 #5627]  INFO -- : Completed 204 No Content in 2ms (ActiveRecord: 1.0ms)
+I, [2016-11-29T09:26:40.847228 #5627]  INFO -- : Started GET "/books" for ::1 at 2016-11-29 09:26:40 +0900
+I, [2016-11-29T09:26:40.849026 #5627]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T09:26:40.850297 #5627]  INFO -- : Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T09:27:58.815700 #5627]  INFO -- : Started POST "/books" for ::1 at 2016-11-29 09:27:58 +0900
+I, [2016-11-29T09:27:58.817512 #5627]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T09:27:58.817602 #5627]  INFO -- :   Parameters: {"book"=>{"title"=>"sample"}}
+I, [2016-11-29T09:27:58.821076 #5627]  INFO -- : Completed 201 Created in 3ms (Views: 0.5ms | ActiveRecord: 1.5ms)
+I, [2016-11-29T09:27:59.846537 #5627]  INFO -- : Started POST "/books" for ::1 at 2016-11-29 09:27:59 +0900
+I, [2016-11-29T09:27:59.848134 #5627]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T09:27:59.848220 #5627]  INFO -- :   Parameters: {"book"=>{"title"=>"sample"}}
+I, [2016-11-29T09:27:59.897350 #5627]  INFO -- : Completed 201 Created in 49ms (Views: 0.4ms | ActiveRecord: 47.1ms)
+I, [2016-11-29T09:28:00.653827 #5627]  INFO -- : Started POST "/books" for ::1 at 2016-11-29 09:28:00 +0900
+I, [2016-11-29T09:28:00.655525 #5627]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T09:28:00.655645 #5627]  INFO -- :   Parameters: {"book"=>{"title"=>"sample"}}
+I, [2016-11-29T09:28:00.697517 #5627]  INFO -- : Completed 201 Created in 42ms (Views: 0.5ms | ActiveRecord: 39.8ms)
+I, [2016-11-29T09:28:29.855252 #5627]  INFO -- : Started GET "/books" for ::1 at 2016-11-29 09:28:29 +0900
+I, [2016-11-29T09:28:29.856926 #5627]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T09:28:29.859034 #5627]  INFO -- : Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T09:28:42.248227 #5627]  INFO -- : Started PUT "/books/?id=4" for ::1 at 2016-11-29 09:28:42 +0900
+F, [2016-11-29T09:28:42.249898 #5627] FATAL -- : 
+ActionController::RoutingError (No route matches [PUT] "/books"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  magellan-rails (0.2.4) lib/magellan/extentions/rails/application.rb:41:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+I, [2016-11-29T09:28:42.302146 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+I, [2016-11-29T09:28:42.316926 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+I, [2016-11-29T09:28:42.341694 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+I, [2016-11-29T09:28:42.358259 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2016-11-29T09:28:42.358384 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (80.3ms)
+I, [2016-11-29T09:28:47.358576 #5627]  INFO -- : Started PUT "/books?id=4" for ::1 at 2016-11-29 09:28:47 +0900
+F, [2016-11-29T09:28:47.360490 #5627] FATAL -- : 
+ActionController::RoutingError (No route matches [PUT] "/books"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  magellan-rails (0.2.4) lib/magellan/extentions/rails/application.rb:41:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+I, [2016-11-29T09:28:47.396980 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+I, [2016-11-29T09:28:47.412489 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+I, [2016-11-29T09:28:47.426138 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+I, [2016-11-29T09:28:47.440380 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2016-11-29T09:28:47.440545 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (59.3ms)
+I, [2016-11-29T09:28:50.690034 #5627]  INFO -- : Started GET "/books" for ::1 at 2016-11-29 09:28:50 +0900
+I, [2016-11-29T09:28:50.691593 #5627]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T09:28:50.693383 #5627]  INFO -- : Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T09:33:00.470608 #5627]  INFO -- : Started GET "/books?id=3" for ::1 at 2016-11-29 09:33:00 +0900
+I, [2016-11-29T09:33:00.473080 #5627]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T09:33:00.473139 #5627]  INFO -- :   Parameters: {"id"=>"3"}
+I, [2016-11-29T09:33:00.474750 #5627]  INFO -- : Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T09:33:05.380706 #5627]  INFO -- : Started GET "/books/id=3" for ::1 at 2016-11-29 09:33:05 +0900
+I, [2016-11-29T09:33:05.382321 #5627]  INFO -- : Processing by BooksController#show as */*
+I, [2016-11-29T09:33:05.382397 #5627]  INFO -- :   Parameters: {"id"=>"id=3"}
+I, [2016-11-29T09:33:05.383340 #5627]  INFO -- : Completed 404 Not Found in 1ms (ActiveRecord: 0.3ms)
+F, [2016-11-29T09:33:05.383885 #5627] FATAL -- : 
+ActiveRecord::RecordNotFound (Couldn't find Book with 'id'=id=3):
+  app/controllers/books_controller.rb:13:in `show'
+
+
+I, [2016-11-29T09:33:05.748000 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+I, [2016-11-29T09:33:05.766941 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+I, [2016-11-29T09:33:05.784628 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+I, [2016-11-29T09:33:05.784867 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.8ms)
+I, [2016-11-29T09:33:29.508185 #5627]  INFO -- : Started GET "/books" for ::1 at 2016-11-29 09:33:29 +0900
+I, [2016-11-29T09:33:29.509914 #5627]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T09:33:29.511429 #5627]  INFO -- : Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T09:33:32.753100 #5627]  INFO -- : Started GET "/books/id=4" for ::1 at 2016-11-29 09:33:32 +0900
+I, [2016-11-29T09:33:32.755090 #5627]  INFO -- : Processing by BooksController#show as */*
+I, [2016-11-29T09:33:32.755175 #5627]  INFO -- :   Parameters: {"id"=>"id=4"}
+I, [2016-11-29T09:33:32.756053 #5627]  INFO -- : Completed 404 Not Found in 1ms (ActiveRecord: 0.3ms)
+F, [2016-11-29T09:33:32.756661 #5627] FATAL -- : 
+ActiveRecord::RecordNotFound (Couldn't find Book with 'id'=id=4):
+  app/controllers/books_controller.rb:13:in `show'
+
+
+I, [2016-11-29T09:33:32.825520 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+I, [2016-11-29T09:33:32.841795 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+I, [2016-11-29T09:33:32.857973 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2016-11-29T09:33:32.858181 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.0ms)
+I, [2016-11-29T09:33:43.632209 #5627]  INFO -- : Started GET "/books/?id=4" for ::1 at 2016-11-29 09:33:43 +0900
+I, [2016-11-29T09:33:43.633826 #5627]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T09:33:43.633907 #5627]  INFO -- :   Parameters: {"id"=>"4"}
+I, [2016-11-29T09:33:43.635478 #5627]  INFO -- : Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T09:33:47.959987 #5627]  INFO -- : Started GET "/books?id=4" for ::1 at 2016-11-29 09:33:47 +0900
+I, [2016-11-29T09:33:47.963016 #5627]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T09:33:47.963230 #5627]  INFO -- :   Parameters: {"id"=>"4"}
+I, [2016-11-29T09:33:47.965804 #5627]  INFO -- : Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.5ms)
+I, [2016-11-29T09:49:42.763044 #5627]  INFO -- : Started GET "/" for ::1 at 2016-11-29 09:49:42 +0900
+I, [2016-11-29T09:49:42.765142 #5627]  INFO -- : Processing by Rails::WelcomeController#index as HTML
+I, [2016-11-29T09:49:42.776068 #5627]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-4.2.4/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+I, [2016-11-29T09:49:42.776354 #5627]  INFO -- : Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+I, [2016-11-29T10:10:12.962511 #5627]  INFO -- : Started GET "/books" for ::1 at 2016-11-29 10:10:12 +0900
+I, [2016-11-29T10:10:12.964126 #5627]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T10:10:12.965837 #5627]  INFO -- : Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T10:28:14.441187 #24808]  INFO -- : Started GET "/books/2" for ::1 at 2016-11-29 10:28:14 +0900
+I, [2016-11-29T10:28:15.462064 #24808]  INFO -- : Processing by BooksController#show as HTML
+I, [2016-11-29T10:28:15.462292 #24808]  INFO -- :   Parameters: {"id"=>"2"}
+I, [2016-11-29T10:28:15.498721 #24808]  INFO -- : Completed 404 Not Found in 36ms (ActiveRecord: 1.8ms)
+F, [2016-11-29T10:28:15.499974 #24808] FATAL -- : 
+ActiveRecord::RecordNotFound (Couldn't find Book with 'id'=2):
+  app/controllers/books_controller.rb:13:in `show'
+
+
+I, [2016-11-29T10:28:15.665036 #24808]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+I, [2016-11-29T10:28:15.685086 #24808]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+I, [2016-11-29T10:28:15.704474 #24808]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+I, [2016-11-29T10:28:15.704767 #24808]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.3ms)
+I, [2016-11-29T10:28:17.489682 #24808]  INFO -- : Started GET "/books/3" for ::1 at 2016-11-29 10:28:17 +0900
+I, [2016-11-29T10:28:17.491328 #24808]  INFO -- : Processing by BooksController#show as HTML
+I, [2016-11-29T10:28:17.491471 #24808]  INFO -- :   Parameters: {"id"=>"3"}
+I, [2016-11-29T10:28:17.492394 #24808]  INFO -- : Completed 404 Not Found in 1ms (ActiveRecord: 0.3ms)
+F, [2016-11-29T10:28:17.493025 #24808] FATAL -- : 
+ActiveRecord::RecordNotFound (Couldn't find Book with 'id'=3):
+  app/controllers/books_controller.rb:13:in `show'
+
+
+I, [2016-11-29T10:28:17.573924 #24808]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+I, [2016-11-29T10:28:17.589290 #24808]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+I, [2016-11-29T10:28:17.608780 #24808]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+I, [2016-11-29T10:28:17.608957 #24808]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.9ms)
+I, [2016-11-29T10:28:21.303158 #24808]  INFO -- : Started GET "/books/4" for ::1 at 2016-11-29 10:28:21 +0900
+I, [2016-11-29T10:28:21.304696 #24808]  INFO -- : Processing by BooksController#show as HTML
+I, [2016-11-29T10:28:21.304804 #24808]  INFO -- :   Parameters: {"id"=>"4"}
+I, [2016-11-29T10:28:21.308666 #24808]  INFO -- : Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T10:35:30.196964 #24808]  INFO -- : Started GET "/books?id=4" for ::1 at 2016-11-29 10:35:30 +0900
+F, [2016-11-29T10:35:30.203187 #24808] FATAL -- : 
+ArgumentError (Missing :action key on routes definition, please check your routes.):
+  config/routes.rb:5:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+I, [2016-11-29T10:35:30.282101 #24808]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+I, [2016-11-29T10:35:30.304323 #24808]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+I, [2016-11-29T10:35:30.324364 #24808]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2016-11-29T10:35:30.324537 #24808]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.0ms)
+I, [2016-11-29T10:35:59.765857 #24943]  INFO -- : Started GET "/books?id=4" for ::1 at 2016-11-29 10:35:59 +0900
+I, [2016-11-29T10:35:59.930186 #24943]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T10:35:59.930271 #24943]  INFO -- :   Parameters: {"id"=>"4"}
+I, [2016-11-29T10:35:59.940372 #24943]  INFO -- : Completed 200 OK in 10ms (Views: 6.2ms | ActiveRecord: 1.3ms)
+I, [2016-11-29T10:38:41.242345 #24995]  INFO -- : Started GET "/books?id=4" for ::1 at 2016-11-29 10:38:41 +0900
+I, [2016-11-29T10:38:41.405659 #24995]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T10:38:41.405748 #24995]  INFO -- :   Parameters: {"id"=>"4"}
+I, [2016-11-29T10:38:41.414778 #24995]  INFO -- : Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 1.0ms)
+I, [2016-11-29T10:39:23.289464 #24995]  INFO -- : Started GET "/books?id=4" for ::1 at 2016-11-29 10:39:23 +0900
+I, [2016-11-29T10:39:23.301050 #24995]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T10:39:23.301166 #24995]  INFO -- :   Parameters: {"id"=>"4"}
+I, [2016-11-29T10:39:23.308236 #24995]  INFO -- : Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+F, [2016-11-29T10:39:23.310415 #24995] FATAL -- : 
+NameError (undefined local variable or method `rails' for #<BooksController:0x007fe44a7f1df0>
+Did you mean?  raise):
+  app/controllers/books_controller.rb:5:in `index'
+
+
+I, [2016-11-29T10:39:23.387217 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+I, [2016-11-29T10:39:23.401758 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+I, [2016-11-29T10:39:23.421551 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2016-11-29T10:39:23.421715 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.6ms)
+I, [2016-11-29T10:40:09.629374 #24995]  INFO -- : Started GET "/books?id=4" for ::1 at 2016-11-29 10:40:09 +0900
+I, [2016-11-29T10:40:09.640385 #24995]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T10:40:09.640443 #24995]  INFO -- :   Parameters: {"id"=>"4"}
+I, [2016-11-29T10:40:09.640662 #24995]  INFO -- : 4
+I, [2016-11-29T10:40:09.646628 #24995]  INFO -- : Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 1.0ms)
+I, [2016-11-29T10:40:17.129265 #24995]  INFO -- : Started GET "/books?id=4" for ::1 at 2016-11-29 10:40:17 +0900
+I, [2016-11-29T10:40:17.131269 #24995]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T10:40:17.131349 #24995]  INFO -- :   Parameters: {"id"=>"4"}
+I, [2016-11-29T10:40:17.131529 #24995]  INFO -- : 4
+I, [2016-11-29T10:40:17.133856 #24995]  INFO -- : Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T10:40:52.016503 #24995]  INFO -- : Started GET "/books?id=4" for ::1 at 2016-11-29 10:40:52 +0900
+I, [2016-11-29T10:40:52.031199 #24995]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T10:40:52.031287 #24995]  INFO -- :   Parameters: {"id"=>"4"}
+I, [2016-11-29T10:40:52.039762 #24995]  INFO -- : Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 1.2ms)
+I, [2016-11-29T10:41:19.300596 #24995]  INFO -- : Started GET "/books?id=4" for ::1 at 2016-11-29 10:41:19 +0900
+I, [2016-11-29T10:41:19.314095 #24995]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T10:41:19.314156 #24995]  INFO -- :   Parameters: {"id"=>"4"}
+I, [2016-11-29T10:41:19.320362 #24995]  INFO -- : Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.9ms)
+I, [2016-11-29T10:41:57.098708 #24995]  INFO -- : Started GET "/books?id=4" for ::1 at 2016-11-29 10:41:57 +0900
+I, [2016-11-29T10:41:57.111499 #24995]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T10:41:57.111642 #24995]  INFO -- :   Parameters: {"id"=>"4"}
+I, [2016-11-29T10:41:57.118528 #24995]  INFO -- : Completed 200 OK in 7ms (Views: 3.6ms | ActiveRecord: 1.1ms)
+I, [2016-11-29T10:42:11.212507 #24995]  INFO -- : Started GET "/books?id=4" for ::1 at 2016-11-29 10:42:11 +0900
+I, [2016-11-29T10:42:11.234491 #24995]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T10:42:11.234651 #24995]  INFO -- :   Parameters: {"id"=>"4"}
+I, [2016-11-29T10:42:11.249945 #24995]  INFO -- : Completed 200 OK in 15ms (Views: 0.6ms | ActiveRecord: 1.3ms)
+I, [2016-11-29T10:44:04.133125 #24995]  INFO -- : Started GET "/books?id=4" for ::1 at 2016-11-29 10:44:04 +0900
+I, [2016-11-29T10:44:04.147497 #24995]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T10:44:04.147555 #24995]  INFO -- :   Parameters: {"id"=>"4"}
+I, [2016-11-29T10:44:04.155147 #24995]  INFO -- : Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 1.4ms)
+I, [2016-11-29T10:44:20.755798 #24995]  INFO -- : Started DELETE "/books?id=4" for ::1 at 2016-11-29 10:44:20 +0900
+F, [2016-11-29T10:44:20.757599 #24995] FATAL -- : 
+ActionController::RoutingError (No route matches [DELETE] "/books"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  magellan-rails (0.2.4) lib/magellan/extentions/rails/application.rb:41:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+I, [2016-11-29T10:44:20.857918 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+I, [2016-11-29T10:44:20.885473 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+I, [2016-11-29T10:44:20.914044 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.8ms)
+I, [2016-11-29T10:44:20.933628 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2016-11-29T10:44:20.933789 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (96.0ms)
+I, [2016-11-29T10:47:54.654215 #24995]  INFO -- : Started DELETE "/books?id=4" for ::1 at 2016-11-29 10:47:54 +0900
+F, [2016-11-29T10:47:54.662921 #24995] FATAL -- : 
+ActionController::RoutingError (No route matches [DELETE] "/books"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  magellan-rails (0.2.4) lib/magellan/extentions/rails/application.rb:41:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+I, [2016-11-29T10:47:54.699547 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+I, [2016-11-29T10:47:54.713571 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+I, [2016-11-29T10:47:54.729969 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+I, [2016-11-29T10:47:54.749460 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+I, [2016-11-29T10:47:54.749633 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (66.4ms)
+I, [2016-11-29T10:51:49.692884 #24995]  INFO -- : Started DELETE "/books" for ::1 at 2016-11-29 10:51:49 +0900
+F, [2016-11-29T10:51:49.756721 #24995] FATAL -- : 
+ActionController::RoutingError (No route matches [DELETE] "/books"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  magellan-rails (0.2.4) lib/magellan/extentions/rails/application.rb:41:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+I, [2016-11-29T10:51:49.922637 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+I, [2016-11-29T10:51:49.939291 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+I, [2016-11-29T10:51:49.956123 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+I, [2016-11-29T10:51:49.972214 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2016-11-29T10:51:49.972417 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (70.4ms)
+I, [2016-11-29T10:52:03.017492 #24995]  INFO -- : Started GET "/books" for ::1 at 2016-11-29 10:52:03 +0900
+I, [2016-11-29T10:52:03.045346 #24995]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T10:52:03.067451 #24995]  INFO -- : Completed 200 OK in 22ms (Views: 6.0ms | ActiveRecord: 1.7ms)
+I, [2016-11-29T10:52:13.190245 #24995]  INFO -- : Started GET "/books?id=4" for ::1 at 2016-11-29 10:52:13 +0900
+I, [2016-11-29T10:52:13.192254 #24995]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T10:52:13.192342 #24995]  INFO -- :   Parameters: {"id"=>"4"}
+I, [2016-11-29T10:52:13.195072 #24995]  INFO -- : Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+I, [2016-11-29T10:52:19.093361 #24995]  INFO -- : Started DELETE "/books/4" for ::1 at 2016-11-29 10:52:19 +0900
+I, [2016-11-29T10:52:19.094972 #24995]  INFO -- : Processing by BooksController#destroy as */*
+I, [2016-11-29T10:52:19.095046 #24995]  INFO -- :   Parameters: {"id"=>"4"}
+I, [2016-11-29T10:52:19.097495 #24995]  INFO -- : Completed 204 No Content in 2ms (ActiveRecord: 1.0ms)
+I, [2016-11-29T10:52:47.316143 #24995]  INFO -- : Started DELETE "/books?id=5" for ::1 at 2016-11-29 10:52:47 +0900
+F, [2016-11-29T10:52:47.318697 #24995] FATAL -- : 
+ActionController::RoutingError (No route matches [DELETE] "/books"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  magellan-rails (0.2.4) lib/magellan/extentions/rails/application.rb:41:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+I, [2016-11-29T10:52:47.370294 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+I, [2016-11-29T10:52:47.387234 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+I, [2016-11-29T10:52:47.402127 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+I, [2016-11-29T10:52:47.420222 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2016-11-29T10:52:47.420362 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.0ms)
+I, [2016-11-29T10:56:57.269373 #24995]  INFO -- : Started PUT "/books?id=5" for ::1 at 2016-11-29 10:56:57 +0900
+F, [2016-11-29T10:56:57.294620 #24995] FATAL -- : 
+ActionController::RoutingError (No route matches [PUT] "/books"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  magellan-rails (0.2.4) lib/magellan/extentions/rails/application.rb:41:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+I, [2016-11-29T10:56:57.475700 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+I, [2016-11-29T10:56:57.492400 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+I, [2016-11-29T10:56:57.508290 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+I, [2016-11-29T10:56:57.537071 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (14.7ms)
+I, [2016-11-29T10:56:57.537270 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (80.2ms)
+I, [2016-11-29T10:57:04.626362 #24995]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 10:57:04 +0900
+I, [2016-11-29T10:57:04.628139 #24995]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T10:57:04.628221 #24995]  INFO -- :   Parameters: {"book"=>{"title"=>"sample2"}, "id"=>"5"}
+I, [2016-11-29T10:57:04.720350 #24995]  INFO -- : Completed 204 No Content in 92ms (ActiveRecord: 16.8ms)
+I, [2016-11-29T10:57:35.768478 #24995]  INFO -- : Started GET "/books?id=5" for ::1 at 2016-11-29 10:57:35 +0900
+I, [2016-11-29T10:57:35.770168 #24995]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T10:57:35.770254 #24995]  INFO -- :   Parameters: {"id"=>"5"}
+I, [2016-11-29T10:57:35.771518 #24995]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T10:57:43.703545 #24995]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 10:57:43 +0900
+I, [2016-11-29T10:57:43.705311 #24995]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T10:57:43.705410 #24995]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "id"=>"5"}
+I, [2016-11-29T10:57:43.780443 #24995]  INFO -- : Completed 204 No Content in 75ms (ActiveRecord: 73.0ms)
+I, [2016-11-29T10:57:46.384362 #24995]  INFO -- : Started GET "/books?id=5" for ::1 at 2016-11-29 10:57:46 +0900
+I, [2016-11-29T10:57:46.386270 #24995]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T10:57:46.386378 #24995]  INFO -- :   Parameters: {"id"=>"5"}
+I, [2016-11-29T10:57:46.387535 #24995]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T10:58:03.641159 #24995]  INFO -- : Started PUT "/books?id=5" for ::1 at 2016-11-29 10:58:03 +0900
+F, [2016-11-29T10:58:03.642897 #24995] FATAL -- : 
+ActionController::RoutingError (No route matches [PUT] "/books"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  magellan-rails (0.2.4) lib/magellan/extentions/rails/application.rb:41:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+I, [2016-11-29T10:58:03.685029 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+I, [2016-11-29T10:58:03.708937 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+I, [2016-11-29T10:58:03.724164 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+I, [2016-11-29T10:58:03.740118 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+I, [2016-11-29T10:58:03.740263 #24995]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (73.7ms)
+I, [2016-11-29T11:21:29.219426 #25910]  INFO -- : Started PUT "/books?id=5" for ::1 at 2016-11-29 11:21:29 +0900
+F, [2016-11-29T11:21:29.784587 #25910] FATAL -- : 
+ActionController::RoutingError (No route matches [PUT] "/books"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  magellan-rails (0.2.4) lib/magellan/extentions/rails/application.rb:41:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+I, [2016-11-29T11:21:29.861183 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+I, [2016-11-29T11:21:29.879647 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+I, [2016-11-29T11:21:29.915244 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (21.5ms)
+I, [2016-11-29T11:21:29.950637 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (18.0ms)
+I, [2016-11-29T11:21:29.950941 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (117.6ms)
+I, [2016-11-29T11:25:23.039183 #25910]  INFO -- : Started GET "/books?id=4" for ::1 at 2016-11-29 11:25:23 +0900
+I, [2016-11-29T11:25:23.074498 #25910]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T11:25:23.074704 #25910]  INFO -- :   Parameters: {"id"=>"4"}
+I, [2016-11-29T11:25:23.107543 #25910]  INFO -- : Completed 404 Not Found in 33ms (ActiveRecord: 1.4ms)
+F, [2016-11-29T11:25:23.108283 #25910] FATAL -- : 
+ActiveRecord::RecordNotFound (Couldn't find Book with 'id'=4):
+  app/controllers/books_controller.rb:8:in `index'
+
+
+I, [2016-11-29T11:25:23.207694 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.5ms)
+I, [2016-11-29T11:25:23.223366 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+I, [2016-11-29T11:25:23.238161 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2016-11-29T11:25:23.238377 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.3ms)
+I, [2016-11-29T11:25:25.979626 #25910]  INFO -- : Started GET "/books" for ::1 at 2016-11-29 11:25:25 +0900
+I, [2016-11-29T11:25:25.981253 #25910]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T11:25:25.985231 #25910]  INFO -- : Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T11:26:02.030172 #25910]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 11:26:02 +0900
+I, [2016-11-29T11:26:02.032537 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T11:26:02.032628 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "id"=>"5"}
+I, [2016-11-29T11:26:02.052930 #25910]  INFO -- : Completed 204 No Content in 20ms (ActiveRecord: 0.5ms)
+I, [2016-11-29T11:27:19.983028 #25910]  INFO -- : Started PUT "/books/5?response=test" for ::1 at 2016-11-29 11:27:19 +0900
+I, [2016-11-29T11:27:19.996322 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T11:27:19.996417 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T11:27:20.004564 #25910]  INFO -- : Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.4ms)
+F, [2016-11-29T11:27:20.005787 #25910] FATAL -- : 
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/books_controller.rb:41:in `update'
+
+
+I, [2016-11-29T11:27:20.084329 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+I, [2016-11-29T11:27:20.101423 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+I, [2016-11-29T11:27:20.115523 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+I, [2016-11-29T11:27:20.115702 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.5ms)
+I, [2016-11-29T11:28:15.614106 #25910]  INFO -- : Started PUT "/books/5?response=1" for ::1 at 2016-11-29 11:28:15 +0900
+I, [2016-11-29T11:28:15.617111 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T11:28:15.617177 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"1", "id"=>"5"}
+I, [2016-11-29T11:28:15.618979 #25910]  INFO -- : Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.5ms)
+F, [2016-11-29T11:28:15.620230 #25910] FATAL -- : 
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/books_controller.rb:41:in `update'
+
+
+I, [2016-11-29T11:28:15.699565 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+I, [2016-11-29T11:28:15.717623 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+I, [2016-11-29T11:28:15.731427 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+I, [2016-11-29T11:28:15.731600 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.2ms)
+I, [2016-11-29T11:28:45.188656 #25910]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 11:28:45 +0900
+I, [2016-11-29T11:28:45.190412 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T11:28:45.190496 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "id"=>"5"}
+I, [2016-11-29T11:28:45.192250 #25910]  INFO -- : Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.5ms)
+F, [2016-11-29T11:28:45.192878 #25910] FATAL -- : 
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/books_controller.rb:41:in `update'
+
+
+I, [2016-11-29T11:28:45.273983 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+I, [2016-11-29T11:28:45.294108 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+I, [2016-11-29T11:28:45.309974 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+I, [2016-11-29T11:28:45.310143 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.2ms)
+I, [2016-11-29T11:28:49.852905 #25910]  INFO -- : Started GET "/books" for ::1 at 2016-11-29 11:28:49 +0900
+I, [2016-11-29T11:28:49.854833 #25910]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T11:28:49.856559 #25910]  INFO -- : Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T11:28:51.575581 #25910]  INFO -- : Started GET "/books" for ::1 at 2016-11-29 11:28:51 +0900
+I, [2016-11-29T11:28:51.577162 #25910]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T11:28:51.581547 #25910]  INFO -- : Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T11:29:04.478246 #25910]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 11:29:04 +0900
+I, [2016-11-29T11:29:04.481053 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T11:29:04.481236 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample4"}, "id"=>"5"}
+I, [2016-11-29T11:29:04.485954 #25910]  INFO -- : Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.9ms)
+F, [2016-11-29T11:29:04.486871 #25910] FATAL -- : 
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/books_controller.rb:41:in `update'
+
+
+I, [2016-11-29T11:29:04.568201 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+I, [2016-11-29T11:29:04.583524 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+I, [2016-11-29T11:29:04.598818 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2016-11-29T11:29:04.598983 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.7ms)
+I, [2016-11-29T11:29:29.696715 #25910]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 11:29:29 +0900
+I, [2016-11-29T11:29:29.712178 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T11:29:29.712266 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample4"}, "id"=>"5"}
+I, [2016-11-29T11:29:29.721226 #25910]  INFO -- : Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.5ms)
+F, [2016-11-29T11:29:29.722279 #25910] FATAL -- : 
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/books_controller.rb:41:in `update'
+
+
+I, [2016-11-29T11:29:29.854510 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+I, [2016-11-29T11:29:29.874849 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+I, [2016-11-29T11:29:29.899005 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2016-11-29T11:29:29.899169 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.6ms)
+I, [2016-11-29T11:29:48.546911 #25910]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 11:29:48 +0900
+I, [2016-11-29T11:29:48.566619 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T11:29:48.566712 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample4"}, "id"=>"5"}
+I, [2016-11-29T11:29:48.579356 #25910]  INFO -- : Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.5ms)
+F, [2016-11-29T11:29:48.580223 #25910] FATAL -- : 
+NoMethodError (undefined method `json' for #<ActionController::Parameters:0x007ff50e288830>):
+  app/controllers/books_controller.rb:41:in `update'
+
+
+I, [2016-11-29T11:29:48.661292 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+I, [2016-11-29T11:29:48.677878 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+I, [2016-11-29T11:29:48.692843 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2016-11-29T11:29:48.692977 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.4ms)
+I, [2016-11-29T11:29:59.701040 #25910]  INFO -- : Started PUT "/books/5?response=1" for ::1 at 2016-11-29 11:29:59 +0900
+I, [2016-11-29T11:29:59.713591 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T11:29:59.713654 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"1", "id"=>"5"}
+I, [2016-11-29T11:29:59.725610 #25910]  INFO -- : Completed 204 No Content in 12ms (ActiveRecord: 4.1ms)
+I, [2016-11-29T11:30:13.674187 #25910]  INFO -- : Started PUT "/books/5?response=test" for ::1 at 2016-11-29 11:30:13 +0900
+I, [2016-11-29T11:30:13.675955 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T11:30:13.676052 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T11:30:13.681578 #25910]  INFO -- : Completed 204 No Content in 5ms (ActiveRecord: 4.0ms)
+I, [2016-11-29T11:30:50.178700 #25910]  INFO -- : Started PUT "/books/5?response=test" for 127.0.0.1 at 2016-11-29 11:30:50 +0900
+I, [2016-11-29T11:30:50.190346 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T11:30:50.190444 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T11:30:50.198936 #25910]  INFO -- : Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.3ms)
+F, [2016-11-29T11:30:50.199659 #25910] FATAL -- : 
+NoMethodError (undefined method `json' for #<ActionController::Parameters:0x007ff50af1a520>):
+  app/controllers/books_controller.rb:44:in `update'
+
+
+I, [2016-11-29T11:30:50.273607 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+I, [2016-11-29T11:30:50.288912 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+I, [2016-11-29T11:30:50.304558 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2016-11-29T11:30:50.304720 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.3ms)
+I, [2016-11-29T11:32:22.535946 #25910]  INFO -- : Started PUT "/books/5?response=test" for 127.0.0.1 at 2016-11-29 11:32:22 +0900
+I, [2016-11-29T11:32:22.548778 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T11:32:22.548867 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T11:32:22.555849 #25910]  INFO -- : Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.3ms)
+F, [2016-11-29T11:32:22.556511 #25910] FATAL -- : 
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/books_controller.rb:44:in `update'
+
+
+I, [2016-11-29T11:32:22.636534 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+I, [2016-11-29T11:32:22.652101 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+I, [2016-11-29T11:32:22.674381 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+I, [2016-11-29T11:32:22.674539 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.6ms)
+I, [2016-11-29T11:32:44.901484 #25910]  INFO -- : Started PUT "/books/5?response=test" for 127.0.0.1 at 2016-11-29 11:32:44 +0900
+I, [2016-11-29T11:32:44.903480 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T11:32:44.903577 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T11:32:44.906311 #25910]  INFO -- : Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.8ms)
+F, [2016-11-29T11:32:44.906993 #25910] FATAL -- : 
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/books_controller.rb:44:in `update'
+
+
+I, [2016-11-29T11:32:44.983823 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+I, [2016-11-29T11:32:45.002782 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+I, [2016-11-29T11:32:45.017862 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2016-11-29T11:32:45.018059 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.0ms)
+I, [2016-11-29T11:44:12.873356 #25910]  INFO -- : Started PUT "/books/5?response=test" for 127.0.0.1 at 2016-11-29 11:44:12 +0900
+I, [2016-11-29T11:44:12.941801 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T11:44:12.941904 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T11:44:12.959916 #25910]  INFO -- : Completed 204 No Content in 17ms (ActiveRecord: 2.5ms)
+I, [2016-11-29T11:44:26.252637 #25910]  INFO -- : Started PUT "/books/5?response=test" for 127.0.0.1 at 2016-11-29 11:44:26 +0900
+I, [2016-11-29T11:44:26.254455 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T11:44:26.254513 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T11:44:26.256085 #25910]  INFO -- : Completed 204 No Content in 1ms (ActiveRecord: 0.4ms)
+I, [2016-11-29T12:15:11.994678 #25910]  INFO -- : Started PUT "/books/5?response=test" for 127.0.0.1 at 2016-11-29 12:15:11 +0900
+I, [2016-11-29T12:15:12.075382 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T12:15:12.075444 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T12:15:12.093416 #25910]  INFO -- : Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.4ms)
+F, [2016-11-29T12:15:12.094113 #25910] FATAL -- : 
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/books_controller.rb:44:in `update'
+
+
+I, [2016-11-29T12:15:12.429316 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+I, [2016-11-29T12:15:12.449129 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+I, [2016-11-29T12:15:12.467005 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+I, [2016-11-29T12:15:12.467173 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.1ms)
+I, [2016-11-29T12:16:03.208696 #25910]  INFO -- : Started PUT "/books/5?response=test" for 127.0.0.1 at 2016-11-29 12:16:03 +0900
+I, [2016-11-29T12:16:03.278886 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T12:16:03.278962 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T12:16:03.297625 #25910]  INFO -- : Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.4ms)
+F, [2016-11-29T12:16:03.298663 #25910] FATAL -- : 
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/books_controller.rb:46:in `update'
+
+
+I, [2016-11-29T12:16:03.622941 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+I, [2016-11-29T12:16:03.639186 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+I, [2016-11-29T12:16:03.655360 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2016-11-29T12:16:03.655533 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.9ms)
+I, [2016-11-29T12:16:47.114704 #25910]  INFO -- : Started PUT "/books/5?response=test" for 127.0.0.1 at 2016-11-29 12:16:47 +0900
+I, [2016-11-29T12:16:47.171345 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T12:16:47.171476 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T12:16:47.191507 #25910]  INFO -- : Completed 500 Internal Server Error in 20ms (ActiveRecord: 2.6ms)
+F, [2016-11-29T12:16:47.192193 #25910] FATAL -- : 
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/books_controller.rb:46:in `update'
+
+
+I, [2016-11-29T12:16:47.490871 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+I, [2016-11-29T12:16:47.508273 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+I, [2016-11-29T12:16:47.525625 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+I, [2016-11-29T12:16:47.525874 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.2ms)
+I, [2016-11-29T12:17:23.851673 #25910]  INFO -- : Started PUT "/books/5?response=test" for 127.0.0.1 at 2016-11-29 12:17:23 +0900
+I, [2016-11-29T12:17:23.919444 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T12:17:23.919717 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T12:17:23.937296 #25910]  INFO -- : Completed 500 Internal Server Error in 17ms (ActiveRecord: 2.0ms)
+F, [2016-11-29T12:17:23.937963 #25910] FATAL -- : 
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/books_controller.rb:46:in `update'
+
+
+I, [2016-11-29T12:17:24.216575 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+I, [2016-11-29T12:17:24.232516 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+I, [2016-11-29T12:17:24.271909 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2016-11-29T12:17:24.272094 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.9ms)
+I, [2016-11-29T12:17:32.282612 #25910]  INFO -- : Started PUT "/books/5?response=test" for 127.0.0.1 at 2016-11-29 12:17:32 +0900
+I, [2016-11-29T12:17:32.284550 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T12:17:32.284649 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T12:17:32.287379 #25910]  INFO -- : Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.5ms)
+F, [2016-11-29T12:17:32.288082 #25910] FATAL -- : 
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/books_controller.rb:46:in `update'
+
+
+I, [2016-11-29T12:17:32.384760 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+I, [2016-11-29T12:17:32.400808 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+I, [2016-11-29T12:17:32.421619 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+I, [2016-11-29T12:17:32.421784 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.9ms)
+I, [2016-11-29T12:17:48.035679 #25910]  INFO -- : Started PUT "/books/5?response=test" for 127.0.0.1 at 2016-11-29 12:17:48 +0900
+I, [2016-11-29T12:17:48.054493 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T12:17:48.054610 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T12:17:48.064595 #25910]  INFO -- : Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.5ms)
+F, [2016-11-29T12:17:48.065739 #25910] FATAL -- : 
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/books_controller.rb:46:in `update'
+
+
+I, [2016-11-29T12:17:48.155786 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+I, [2016-11-29T12:17:48.171093 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+I, [2016-11-29T12:17:48.187713 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2016-11-29T12:17:48.187883 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.2ms)
+I, [2016-11-29T12:19:46.831912 #25910]  INFO -- : Started PUT "/books/5?response=test" for 127.0.0.1 at 2016-11-29 12:19:46 +0900
+I, [2016-11-29T12:19:46.846865 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T12:19:46.847002 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T12:19:46.854566 #25910]  INFO -- : Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.5ms)
+F, [2016-11-29T12:19:46.855186 #25910] FATAL -- : 
+TypeError (no implicit conversion of ActionController::Parameters into String):
+  app/controllers/books_controller.rb:44:in `update'
+
+
+I, [2016-11-29T12:19:46.939570 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+I, [2016-11-29T12:19:46.955417 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+I, [2016-11-29T12:19:46.969957 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2016-11-29T12:19:46.970137 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.6ms)
+I, [2016-11-29T12:20:07.361470 #25910]  INFO -- : Started PUT "/books/5?response=test" for 127.0.0.1 at 2016-11-29 12:20:07 +0900
+I, [2016-11-29T12:20:07.379824 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T12:20:07.379921 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T12:20:07.387746 #25910]  INFO -- : Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.4ms)
+F, [2016-11-29T12:20:07.389089 #25910] FATAL -- : 
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/books_controller.rb:47:in `update'
+
+
+I, [2016-11-29T12:20:07.487680 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+I, [2016-11-29T12:20:07.503430 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+I, [2016-11-29T12:20:07.519471 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+I, [2016-11-29T12:20:07.519650 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.3ms)
+I, [2016-11-29T12:20:34.535083 #25910]  INFO -- : Started PUT "/books/5?response=test" for 127.0.0.1 at 2016-11-29 12:20:34 +0900
+I, [2016-11-29T12:20:34.547551 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T12:20:34.547642 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T12:20:34.554943 #25910]  INFO -- : Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.3ms)
+F, [2016-11-29T12:20:34.555600 #25910] FATAL -- : 
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/books_controller.rb:47:in `update'
+
+
+I, [2016-11-29T12:20:34.659329 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+I, [2016-11-29T12:20:34.676388 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+I, [2016-11-29T12:20:34.692517 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2016-11-29T12:20:34.692681 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.2ms)
+I, [2016-11-29T12:22:36.601355 #25910]  INFO -- : Started PUT "/books/5?response=test" for 127.0.0.1 at 2016-11-29 12:22:36 +0900
+I, [2016-11-29T12:22:36.619691 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T12:22:36.619790 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T12:22:36.629009 #25910]  INFO -- : Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.4ms)
+F, [2016-11-29T12:22:36.630207 #25910] FATAL -- : 
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/books_controller.rb:49:in `update'
+
+
+I, [2016-11-29T12:22:36.728417 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+I, [2016-11-29T12:22:36.746239 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+I, [2016-11-29T12:22:36.764916 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+I, [2016-11-29T12:22:36.765144 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.9ms)
+I, [2016-11-29T12:26:36.602317 #25910]  INFO -- : Started PUT "/books/5?response=test" for 127.0.0.1 at 2016-11-29 12:26:36 +0900
+I, [2016-11-29T12:26:36.666525 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T12:26:36.666634 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T12:26:36.683837 #25910]  INFO -- : Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.2ms)
+F, [2016-11-29T12:26:36.684476 #25910] FATAL -- : 
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/books_controller.rb:48:in `update'
+
+
+I, [2016-11-29T12:26:37.001119 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+I, [2016-11-29T12:26:37.017296 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+I, [2016-11-29T12:26:37.032714 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2016-11-29T12:26:37.032892 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.7ms)
+I, [2016-11-29T12:30:59.294878 #25910]  INFO -- : Started PUT "/books/5?response=test" for 127.0.0.1 at 2016-11-29 12:30:59 +0900
+I, [2016-11-29T12:30:59.310853 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T12:30:59.310963 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T12:30:59.317396 #25910]  INFO -- : Completed 204 No Content in 6ms (ActiveRecord: 1.3ms)
+I, [2016-11-29T12:31:00.278590 #25910]  INFO -- : Started PUT "/books/5?response=test" for 127.0.0.1 at 2016-11-29 12:31:00 +0900
+I, [2016-11-29T12:31:00.280840 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T12:31:00.280941 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T12:31:00.283177 #25910]  INFO -- : Completed 204 No Content in 2ms (ActiveRecord: 0.7ms)
+I, [2016-11-29T12:31:06.868589 #25910]  INFO -- : Started PUT "/books/5?response=test" for 127.0.0.1 at 2016-11-29 12:31:06 +0900
+I, [2016-11-29T12:31:06.870089 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T12:31:06.870171 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T12:31:06.871999 #25910]  INFO -- : Completed 204 No Content in 2ms (ActiveRecord: 0.5ms)
+I, [2016-11-29T12:33:20.200062 #25910]  INFO -- : Started PUT "/books/5?response=test" for 127.0.0.1 at 2016-11-29 12:33:20 +0900
+I, [2016-11-29T12:33:20.211453 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T12:33:20.211596 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T12:33:20.218523 #25910]  INFO -- : Completed 204 No Content in 7ms (ActiveRecord: 1.3ms)
+I, [2016-11-29T12:35:40.148424 #25910]  INFO -- : Started PUT "/books/5?response=test" for 127.0.0.1 at 2016-11-29 12:35:40 +0900
+I, [2016-11-29T12:35:40.165522 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T12:35:40.165623 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T12:35:40.175529 #25910]  INFO -- : Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.5ms)
+F, [2016-11-29T12:35:40.176253 #25910] FATAL -- : 
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/books_controller.rb:45:in `update'
+
+
+I, [2016-11-29T12:35:40.264405 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+I, [2016-11-29T12:35:40.290572 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+I, [2016-11-29T12:35:40.306343 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+I, [2016-11-29T12:35:40.306515 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.0ms)
+I, [2016-11-29T12:36:00.801795 #25910]  INFO -- : Started PUT "/books/5?response=test" for 127.0.0.1 at 2016-11-29 12:36:00 +0900
+I, [2016-11-29T12:36:00.816506 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T12:36:00.816569 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T12:36:00.824023 #25910]  INFO -- : Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.3ms)
+F, [2016-11-29T12:36:00.824791 #25910] FATAL -- : 
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/books_controller.rb:45:in `update'
+
+
+I, [2016-11-29T12:36:00.921610 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+I, [2016-11-29T12:36:00.940101 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+I, [2016-11-29T12:36:00.958856 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+I, [2016-11-29T12:36:00.959020 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.6ms)
+I, [2016-11-29T12:37:36.184132 #25910]  INFO -- : Started PUT "/books/5?response=test" for 127.0.0.1 at 2016-11-29 12:37:36 +0900
+I, [2016-11-29T12:37:36.201016 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T12:37:36.201106 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T12:37:36.209897 #25910]  INFO -- : Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+I, [2016-11-29T12:39:09.255767 #25910]  INFO -- : Started PUT "/books/5?response=test" for 127.0.0.1 at 2016-11-29 12:39:09 +0900
+I, [2016-11-29T12:39:09.277843 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T12:39:09.277904 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T12:39:09.285095 #25910]  INFO -- : Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.6ms)
+I, [2016-11-29T12:53:21.676414 #25910]  INFO -- : Started PUT "/books/5?response=test" for ::1 at 2016-11-29 12:53:21 +0900
+I, [2016-11-29T12:53:21.798385 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T12:53:21.798517 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample3"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T12:53:21.819772 #25910]  INFO -- : Completed 200 OK in 21ms (Views: 0.3ms | ActiveRecord: 1.9ms)
+I, [2016-11-29T12:55:53.298620 #25910]  INFO -- : Started POST "/books" for ::1 at 2016-11-29 12:55:53 +0900
+I, [2016-11-29T12:55:53.317495 #25910]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T12:55:53.317606 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample"}}
+I, [2016-11-29T12:55:53.336566 #25910]  INFO -- : Completed 201 Created in 19ms (Views: 1.2ms | ActiveRecord: 15.2ms)
+I, [2016-11-29T12:56:10.290219 #25910]  INFO -- : Started POST "/books?respnce=test" for ::1 at 2016-11-29 12:56:10 +0900
+I, [2016-11-29T12:56:10.317892 #25910]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T12:56:10.317990 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample"}, "respnce"=>"test"}
+I, [2016-11-29T12:56:10.351245 #25910]  INFO -- : Completed 201 Created in 33ms (Views: 0.6ms | ActiveRecord: 31.1ms)
+I, [2016-11-29T12:57:04.269388 #25910]  INFO -- : Started POST "/books?respnce=test" for 127.0.0.1 at 2016-11-29 12:57:04 +0900
+I, [2016-11-29T12:57:04.369267 #25910]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T12:57:04.369344 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample"}, "respnce"=>"test"}
+I, [2016-11-29T12:57:04.403295 #25910]  INFO -- : Completed 201 Created in 34ms (Views: 0.8ms | ActiveRecord: 16.9ms)
+I, [2016-11-29T12:58:04.336878 #25910]  INFO -- : Started POST "/books?respnce=test" for 127.0.0.1 at 2016-11-29 12:58:04 +0900
+I, [2016-11-29T12:58:04.418323 #25910]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T12:58:04.418420 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample"}, "respnce"=>"test"}
+I, [2016-11-29T12:58:04.454291 #25910]  INFO -- : Completed 201 Created in 36ms (Views: 1.0ms | ActiveRecord: 16.8ms)
+I, [2016-11-29T13:00:46.314459 #25910]  INFO -- : Started POST "/books?respnce=test" for 127.0.0.1 at 2016-11-29 13:00:46 +0900
+I, [2016-11-29T13:00:46.321216 #25910]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T13:00:46.321500 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample"}, "respnce"=>"test"}
+I, [2016-11-29T13:00:46.327182 #25910]  INFO -- : Completed 201 Created in 5ms (Views: 0.3ms | ActiveRecord: 2.6ms)
+I, [2016-11-29T13:02:01.488291 #25910]  INFO -- : Started POST "/books?response=test" for 127.0.0.1 at 2016-11-29 13:02:01 +0900
+I, [2016-11-29T13:02:01.490619 #25910]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T13:02:01.490732 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample"}, "response"=>"test"}
+I, [2016-11-29T13:02:01.509198 #25910]  INFO -- : Completed 201 Created in 18ms (Views: 0.5ms | ActiveRecord: 16.0ms)
+I, [2016-11-29T13:03:02.642191 #25910]  INFO -- : Started POST "/books?response=test" for 127.0.0.1 at 2016-11-29 13:03:02 +0900
+F, [2016-11-29T13:03:02.689209 #25910] FATAL -- : 
+SyntaxError (/Users/takeru/Codes/magellan-functional-test/workers/magellan-rails-http-cloudsql/app/controllers/books_controller.rb:30: syntax error, unexpected keyword_else):
+  app/controllers/books_controller.rb:30: syntax error, unexpected keyword_else
+
+
+I, [2016-11-29T13:03:03.718842 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+I, [2016-11-29T13:03:03.734813 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+I, [2016-11-29T13:03:03.749681 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+I, [2016-11-29T13:03:03.749881 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.3ms)
+I, [2016-11-29T13:03:31.269100 #25910]  INFO -- : Started POST "/books?response=test" for 127.0.0.1 at 2016-11-29 13:03:31 +0900
+I, [2016-11-29T13:03:31.352575 #25910]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T13:03:31.352673 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample"}, "response"=>"test"}
+I, [2016-11-29T13:03:31.384532 #25910]  INFO -- : Completed 201 Created in 32ms (Views: 0.8ms | ActiveRecord: 16.1ms)
+I, [2016-11-29T13:04:28.290199 #25910]  INFO -- : Started POST "/books?response=test" for 127.0.0.1 at 2016-11-29 13:04:28 +0900
+F, [2016-11-29T13:04:28.308890 #25910] FATAL -- : 
+ActionController::RoutingError (undefined method `requier' for BooksController:Class
+Did you mean?  require):
+  app/controllers/books_controller.rb:4:in `<class:BooksController>'
+  app/controllers/books_controller.rb:1:in `<top (required)>'
+
+
+I, [2016-11-29T13:04:28.545334 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+I, [2016-11-29T13:04:28.564453 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+I, [2016-11-29T13:04:28.580367 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+I, [2016-11-29T13:04:28.597216 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+I, [2016-11-29T13:04:28.597425 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (74.0ms)
+I, [2016-11-29T13:05:06.329803 #25910]  INFO -- : Started POST "/books?response=test" for 127.0.0.1 at 2016-11-29 13:05:06 +0900
+F, [2016-11-29T13:05:07.344808 #25910] FATAL -- : 
+LoadError (cannot load such file -- pry):
+  app/controllers/books_controller.rb:4:in `<class:BooksController>'
+  app/controllers/books_controller.rb:1:in `<top (required)>'
+
+
+I, [2016-11-29T13:05:07.442501 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+I, [2016-11-29T13:05:07.458063 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+I, [2016-11-29T13:05:07.472594 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2016-11-29T13:05:07.472785 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.9ms)
+I, [2016-11-29T13:08:08.020813 #25910]  INFO -- : Started POST "/books?response=test" for 127.0.0.1 at 2016-11-29 13:08:08 +0900
+I, [2016-11-29T13:08:08.034008 #25910]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T13:08:08.034103 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample"}, "response"=>"test"}
+I, [2016-11-29T13:08:08.042520 #25910]  INFO -- : Completed 201 Created in 8ms (Views: 1.1ms | ActiveRecord: 2.0ms)
+I, [2016-11-29T13:09:03.090473 #25910]  INFO -- : Started POST "/books?response=test" for 127.0.0.1 at 2016-11-29 13:09:03 +0900
+I, [2016-11-29T13:09:03.104046 #25910]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T13:09:03.104106 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample"}, "response"=>"test"}
+I, [2016-11-29T13:09:03.112307 #25910]  INFO -- : Completed 201 Created in 8ms (Views: 0.8ms | ActiveRecord: 2.3ms)
+I, [2016-11-29T13:09:41.014645 #25910]  INFO -- : Started POST "/books?response=test" for 127.0.0.1 at 2016-11-29 13:09:41 +0900
+I, [2016-11-29T13:09:41.029256 #25910]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T13:09:41.029368 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample"}, "response"=>"test"}
+I, [2016-11-29T13:09:41.037065 #25910]  INFO -- : Completed 201 Created in 8ms (Views: 0.8ms | ActiveRecord: 1.6ms)
+I, [2016-11-29T13:10:05.652036 #25910]  INFO -- : Started POST "/books?response=test" for 127.0.0.1 at 2016-11-29 13:10:05 +0900
+I, [2016-11-29T13:10:05.665388 #25910]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T13:10:05.665451 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample"}, "response"=>"test"}
+I, [2016-11-29T13:10:05.673761 #25910]  INFO -- : Completed 201 Created in 8ms (Views: 0.8ms | ActiveRecord: 2.1ms)
+I, [2016-11-29T13:12:13.386853 #25910]  INFO -- : Started POST "/books?response=test" for 127.0.0.1 at 2016-11-29 13:12:13 +0900
+I, [2016-11-29T13:12:13.404110 #25910]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T13:12:13.404373 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"sample"}, "response"=>"test"}
+I, [2016-11-29T13:12:13.448114 #25910]  INFO -- : Completed 201 Created in 44ms (Views: 0.9ms | ActiveRecord: 34.6ms)
+I, [2016-11-29T13:13:07.717191 #25910]  INFO -- : Started GET "/books" for ::1 at 2016-11-29 13:13:07 +0900
+I, [2016-11-29T13:13:07.718983 #25910]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T13:13:07.724187 #25910]  INFO -- : Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T13:14:05.062163 #25910]  INFO -- : Started POST "/books" for ::1 at 2016-11-29 13:14:05 +0900
+I, [2016-11-29T13:14:05.065169 #25910]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T13:14:05.065265 #25910]  INFO -- :   Parameters: {"title"=>{"books"=>"Sample"}}
+I, [2016-11-29T13:14:05.065760 #25910]  INFO -- : Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+F, [2016-11-29T13:14:05.066831 #25910] FATAL -- : 
+ActionController::ParameterMissing (param is missing or the value is empty: book):
+  app/controllers/books_controller.rb:61:in `book_params'
+  app/controllers/books_controller.rb:25:in `create'
+
+
+I, [2016-11-29T13:14:05.629723 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+I, [2016-11-29T13:14:05.644462 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+I, [2016-11-29T13:14:05.660038 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+I, [2016-11-29T13:14:05.660354 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.6ms)
+I, [2016-11-29T13:14:28.509463 #25910]  INFO -- : Started POST "/books" for ::1 at 2016-11-29 13:14:28 +0900
+I, [2016-11-29T13:14:28.511338 #25910]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T13:14:28.511485 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample"}}
+I, [2016-11-29T13:14:28.547318 #25910]  INFO -- : Completed 201 Created in 36ms (Views: 1.3ms | ActiveRecord: 32.6ms)
+I, [2016-11-29T13:14:50.578328 #25910]  INFO -- : Started POST "/books?response=test" for ::1 at 2016-11-29 13:14:50 +0900
+I, [2016-11-29T13:14:50.580202 #25910]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T13:14:50.580263 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample"}, "response"=>"test"}
+I, [2016-11-29T13:14:50.597975 #25910]  INFO -- : Completed 201 Created in 18ms (Views: 0.5ms | ActiveRecord: 15.6ms)
+I, [2016-11-29T13:15:07.244758 #25910]  INFO -- : Started POST "/books?response=test" for ::1 at 2016-11-29 13:15:07 +0900
+I, [2016-11-29T13:15:07.257648 #25910]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T13:15:07.257744 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample"}, "response"=>"test"}
+I, [2016-11-29T13:15:07.266185 #25910]  INFO -- : Completed 201 Created in 8ms (Views: 0.7ms | ActiveRecord: 1.6ms)
+I, [2016-11-29T13:20:18.571538 #25910]  INFO -- : Started POST "/books?response=test" for ::1 at 2016-11-29 13:20:18 +0900
+I, [2016-11-29T13:20:18.585387 #25910]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T13:20:18.585482 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample"}, "response"=>"test"}
+I, [2016-11-29T13:20:18.594303 #25910]  INFO -- : Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.9ms)
+F, [2016-11-29T13:20:18.595010 #25910] FATAL -- : 
+TypeError (no implicit conversion of Book into String):
+  app/controllers/books_controller.rb:27:in `create'
+
+
+I, [2016-11-29T13:20:18.668725 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+I, [2016-11-29T13:20:18.684062 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+I, [2016-11-29T13:20:18.699195 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2016-11-29T13:20:18.699405 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.1ms)
+I, [2016-11-29T13:20:29.021031 #25910]  INFO -- : Started POST "/books?response=test" for ::1 at 2016-11-29 13:20:29 +0900
+I, [2016-11-29T13:20:29.022860 #25910]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T13:20:29.022951 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample"}, "response"=>"test"}
+I, [2016-11-29T13:20:29.023588 #25910]  INFO -- : Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+F, [2016-11-29T13:20:29.024584 #25910] FATAL -- : 
+TypeError (no implicit conversion of Book into String):
+  app/controllers/books_controller.rb:27:in `create'
+
+
+I, [2016-11-29T13:20:29.104050 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+I, [2016-11-29T13:20:29.121859 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+I, [2016-11-29T13:20:29.139553 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+I, [2016-11-29T13:20:29.139784 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.0ms)
+I, [2016-11-29T13:23:36.103649 #25910]  INFO -- : Started POST "/books?response=test" for ::1 at 2016-11-29 13:23:36 +0900
+I, [2016-11-29T13:23:36.114993 #25910]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T13:23:36.115083 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample"}, "response"=>"test"}
+I, [2016-11-29T13:23:36.122577 #25910]  INFO -- : Completed 201 Created in 7ms (Views: 0.7ms | ActiveRecord: 1.7ms)
+I, [2016-11-29T13:33:20.029476 #25910]  INFO -- : Started POST "/books/5" for ::1 at 2016-11-29 13:33:20 +0900
+F, [2016-11-29T13:33:20.032121 #25910] FATAL -- : 
+ActionController::RoutingError (No route matches [POST] "/books/5"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  magellan-rails (0.2.4) lib/magellan/extentions/rails/application.rb:41:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+I, [2016-11-29T13:33:20.067987 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+I, [2016-11-29T13:33:20.084468 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+I, [2016-11-29T13:33:20.104721 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+I, [2016-11-29T13:33:20.123035 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+I, [2016-11-29T13:33:20.123181 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (70.1ms)
+I, [2016-11-29T13:33:38.651448 #25910]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 13:33:38 +0900
+I, [2016-11-29T13:33:38.654095 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T13:33:38.654216 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample2"}, "id"=>"5"}
+I, [2016-11-29T13:33:38.659376 #25910]  INFO -- : Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.9ms)
+I, [2016-11-29T13:34:33.260981 #25910]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 13:34:33 +0900
+I, [2016-11-29T13:34:33.262698 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T13:34:33.262788 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample2"}, "id"=>"5"}
+I, [2016-11-29T13:34:33.264434 #25910]  INFO -- : Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+I, [2016-11-29T13:35:02.283746 #25910]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 13:35:02 +0900
+I, [2016-11-29T13:35:02.296161 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T13:35:02.296253 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample2"}, "id"=>"5"}
+I, [2016-11-29T13:35:02.304178 #25910]  INFO -- : Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 2.2ms)
+I, [2016-11-29T13:36:13.217175 #25910]  INFO -- : Started POST "/books/5" for ::1 at 2016-11-29 13:36:13 +0900
+F, [2016-11-29T13:36:13.231983 #25910] FATAL -- : 
+ActionController::RoutingError (No route matches [POST] "/books/5"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  magellan-rails (0.2.4) lib/magellan/extentions/rails/application.rb:41:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+I, [2016-11-29T13:36:13.283029 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+I, [2016-11-29T13:36:13.302877 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+I, [2016-11-29T13:36:13.318809 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+I, [2016-11-29T13:36:13.336133 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+I, [2016-11-29T13:36:13.336295 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (76.4ms)
+I, [2016-11-29T13:36:19.243082 #25910]  INFO -- : Started POST "/books/5" for ::1 at 2016-11-29 13:36:19 +0900
+F, [2016-11-29T13:36:19.244809 #25910] FATAL -- : 
+ActionController::RoutingError (No route matches [POST] "/books/5"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  magellan-rails (0.2.4) lib/magellan/extentions/rails/application.rb:41:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+I, [2016-11-29T13:36:19.282739 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+I, [2016-11-29T13:36:19.297692 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+I, [2016-11-29T13:36:19.318921 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+I, [2016-11-29T13:36:19.334514 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2016-11-29T13:36:19.334659 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (68.8ms)
+I, [2016-11-29T13:36:46.929580 #25910]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 13:36:46 +0900
+I, [2016-11-29T13:36:46.968556 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T13:36:46.968698 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample2"}, "id"=>"5"}
+I, [2016-11-29T13:36:46.976980 #25910]  INFO -- : Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.7ms)
+I, [2016-11-29T13:37:34.051529 #25910]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 13:37:34 +0900
+I, [2016-11-29T13:37:34.064478 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T13:37:34.064570 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample2"}, "id"=>"5"}
+I, [2016-11-29T13:37:34.071419 #25910]  INFO -- : Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.5ms)
+I, [2016-11-29T13:38:36.954476 #25910]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 13:38:36 +0900
+I, [2016-11-29T13:38:36.966373 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T13:38:36.966463 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample2"}, "id"=>"5"}
+I, [2016-11-29T13:38:36.972203 #25910]  INFO -- : Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.0ms)
+F, [2016-11-29T13:38:36.972941 #25910] FATAL -- : 
+IOError (not opened for reading):
+  app/controllers/books_controller.rb:42:in `update'
+
+
+I, [2016-11-29T13:38:37.158582 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+I, [2016-11-29T13:38:37.174245 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+I, [2016-11-29T13:38:37.191602 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2016-11-29T13:38:37.191799 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.9ms)
+I, [2016-11-29T13:38:52.606916 #25910]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 13:38:52 +0900
+I, [2016-11-29T13:38:52.623250 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T13:38:52.623355 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample2"}, "id"=>"5"}
+I, [2016-11-29T13:38:52.632939 #25910]  INFO -- : Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.6ms)
+I, [2016-11-29T13:39:14.151762 #25910]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 13:39:14 +0900
+I, [2016-11-29T13:39:14.163133 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T13:39:14.163220 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample2"}, "id"=>"5"}
+I, [2016-11-29T13:39:14.171466 #25910]  INFO -- : Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.3ms)
+I, [2016-11-29T13:41:28.573057 #25910]  INFO -- : Started POST "/books/5" for ::1 at 2016-11-29 13:41:28 +0900
+F, [2016-11-29T13:41:28.574825 #25910] FATAL -- : 
+ActionController::RoutingError (No route matches [POST] "/books/5"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  magellan-rails (0.2.4) lib/magellan/extentions/rails/application.rb:41:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+I, [2016-11-29T13:41:28.610134 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+I, [2016-11-29T13:41:28.625740 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+I, [2016-11-29T13:41:28.640294 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+I, [2016-11-29T13:41:28.657327 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2016-11-29T13:41:28.657490 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (62.3ms)
+I, [2016-11-29T13:42:06.908733 #25910]  INFO -- : Started POST "/books/5" for ::1 at 2016-11-29 13:42:06 +0900
+F, [2016-11-29T13:42:06.910350 #25910] FATAL -- : 
+ActionController::RoutingError (No route matches [POST] "/books/5"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  magellan-rails (0.2.4) lib/magellan/extentions/rails/application.rb:41:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+I, [2016-11-29T13:42:06.947189 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+I, [2016-11-29T13:42:06.961477 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+I, [2016-11-29T13:42:06.977497 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+I, [2016-11-29T13:42:06.999104 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+I, [2016-11-29T13:42:06.999310 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (68.6ms)
+I, [2016-11-29T13:42:14.414798 #25910]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 13:42:14 +0900
+I, [2016-11-29T13:42:14.416939 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T13:42:14.417027 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample2"}, "id"=>"5"}
+I, [2016-11-29T13:42:14.419585 #25910]  INFO -- : Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+I, [2016-11-29T13:42:42.822408 #25910]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 13:42:42 +0900
+I, [2016-11-29T13:42:42.824073 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T13:42:42.824154 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample2"}, "id"=>"5"}
+I, [2016-11-29T13:42:42.827765 #25910]  INFO -- : Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+I, [2016-11-29T13:43:14.134796 #25910]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 13:43:14 +0900
+I, [2016-11-29T13:43:14.151648 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T13:43:14.151729 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample2"}, "id"=>"5"}
+I, [2016-11-29T13:43:14.158367 #25910]  INFO -- : Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.3ms)
+I, [2016-11-29T13:43:28.017550 #25910]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 13:43:28 +0900
+I, [2016-11-29T13:43:28.029213 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T13:43:28.029303 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample2"}, "id"=>"5"}
+I, [2016-11-29T13:43:28.036218 #25910]  INFO -- : Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.3ms)
+I, [2016-11-29T13:43:59.363457 #25910]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 13:43:59 +0900
+I, [2016-11-29T13:43:59.375571 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T13:43:59.375676 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample2"}, "id"=>"5"}
+I, [2016-11-29T13:43:59.383046 #25910]  INFO -- : Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+I, [2016-11-29T13:44:39.803274 #25910]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 13:44:39 +0900
+I, [2016-11-29T13:44:39.829628 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T13:44:39.829724 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample2"}, "id"=>"5"}
+I, [2016-11-29T13:44:39.844991 #25910]  INFO -- : Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 1.9ms)
+I, [2016-11-29T13:45:15.629523 #25910]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 13:45:15 +0900
+I, [2016-11-29T13:45:15.644078 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T13:45:15.644168 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample2"}, "id"=>"5"}
+I, [2016-11-29T13:45:15.654912 #25910]  INFO -- : Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 1.6ms)
+I, [2016-11-29T13:47:54.352390 #25910]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 13:47:54 +0900
+F, [2016-11-29T13:47:54.364954 #25910] FATAL -- : 
+SyntaxError (/Users/takeru/Codes/magellan-functional-test/workers/magellan-rails-http-cloudsql/app/controllers/books_controller.rb:43: syntax error, unexpected '[', expecting '('
+    puts request.['HTTP_TEST_VERSION']
+                  ^
+/Users/takeru/Codes/magellan-functional-test/workers/magellan-rails-http-cloudsql/app/controllers/books_controller.rb:43: syntax error, unexpected ']', expecting keyword_end):
+  app/controllers/books_controller.rb:43: syntax error, unexpected '[', expecting '('
+  app/controllers/books_controller.rb:43: syntax error, unexpected ']', expecting keyword_end
+
+
+I, [2016-11-29T13:47:54.439809 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+I, [2016-11-29T13:47:54.455429 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+I, [2016-11-29T13:47:54.474523 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2016-11-29T13:47:54.474813 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.5ms)
+I, [2016-11-29T13:48:08.854298 #25910]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 13:48:08 +0900
+I, [2016-11-29T13:48:08.873641 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T13:48:08.873729 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample2"}, "id"=>"5"}
+I, [2016-11-29T13:48:08.884384 #25910]  INFO -- : Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 2.0ms)
+I, [2016-11-29T13:49:14.528450 #25910]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 13:49:14 +0900
+I, [2016-11-29T13:49:14.600349 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T13:49:14.600441 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample2"}, "id"=>"5"}
+I, [2016-11-29T13:49:14.602801 #25910]  INFO -- : Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+I, [2016-11-29T13:49:32.996696 #25910]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 13:49:32 +0900
+I, [2016-11-29T13:49:33.019323 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T13:49:33.019454 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample2"}, "id"=>"5"}
+I, [2016-11-29T13:49:33.029984 #25910]  INFO -- : Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 2.1ms)
+I, [2016-11-29T13:58:07.418217 #25910]  INFO -- : Started GET "/books" for ::1 at 2016-11-29 13:58:07 +0900
+I, [2016-11-29T13:58:07.430100 #25910]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T13:58:07.431548 #25910]  INFO -- : Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+F, [2016-11-29T13:58:07.432150 #25910] FATAL -- : 
+JSON::ParserError (784: unexpected token at 'null'):
+  app/controllers/books_controller.rb:11:in `index'
+
+
+I, [2016-11-29T13:58:07.506612 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+I, [2016-11-29T13:58:07.524860 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+I, [2016-11-29T13:58:07.540762 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2016-11-29T13:58:07.540990 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.4ms)
+I, [2016-11-29T13:59:06.453544 #25910]  INFO -- : Started GET "/books" for ::1 at 2016-11-29 13:59:06 +0900
+I, [2016-11-29T13:59:06.465372 #25910]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T13:59:06.474652 #25910]  INFO -- : Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 1.7ms)
+I, [2016-11-29T13:59:12.034634 #25910]  INFO -- : Started GET "/books/1" for ::1 at 2016-11-29 13:59:12 +0900
+I, [2016-11-29T13:59:12.036450 #25910]  INFO -- : Processing by BooksController#show as HTML
+I, [2016-11-29T13:59:12.036500 #25910]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2016-11-29T13:59:12.037695 #25910]  INFO -- : Completed 404 Not Found in 1ms (ActiveRecord: 0.3ms)
+F, [2016-11-29T13:59:12.038347 #25910] FATAL -- : 
+ActiveRecord::RecordNotFound (Couldn't find Book with 'id'=1):
+  app/controllers/books_controller.rb:19:in `show'
+
+
+I, [2016-11-29T13:59:12.131330 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+I, [2016-11-29T13:59:12.148345 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+I, [2016-11-29T13:59:12.165834 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2016-11-29T13:59:12.166044 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.9ms)
+I, [2016-11-29T13:59:15.284606 #25910]  INFO -- : Started GET "/books/4" for ::1 at 2016-11-29 13:59:15 +0900
+I, [2016-11-29T13:59:15.286264 #25910]  INFO -- : Processing by BooksController#show as HTML
+I, [2016-11-29T13:59:15.286314 #25910]  INFO -- :   Parameters: {"id"=>"4"}
+I, [2016-11-29T13:59:15.287198 #25910]  INFO -- : Completed 404 Not Found in 1ms (ActiveRecord: 0.3ms)
+F, [2016-11-29T13:59:15.287797 #25910] FATAL -- : 
+ActiveRecord::RecordNotFound (Couldn't find Book with 'id'=4):
+  app/controllers/books_controller.rb:19:in `show'
+
+
+I, [2016-11-29T13:59:15.360743 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+I, [2016-11-29T13:59:15.377828 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+I, [2016-11-29T13:59:15.392885 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2016-11-29T13:59:15.393051 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.0ms)
+I, [2016-11-29T13:59:18.197830 #25910]  INFO -- : Started GET "/books/5" for ::1 at 2016-11-29 13:59:18 +0900
+I, [2016-11-29T13:59:18.199530 #25910]  INFO -- : Processing by BooksController#show as HTML
+I, [2016-11-29T13:59:18.199580 #25910]  INFO -- :   Parameters: {"id"=>"5"}
+I, [2016-11-29T13:59:18.200988 #25910]  INFO -- : Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T14:00:03.706321 #25910]  INFO -- : Started GET "/books/5" for ::1 at 2016-11-29 14:00:03 +0900
+I, [2016-11-29T14:00:03.717564 #25910]  INFO -- : Processing by BooksController#show as HTML
+I, [2016-11-29T14:00:03.717621 #25910]  INFO -- :   Parameters: {"id"=>"5"}
+I, [2016-11-29T14:00:03.723434 #25910]  INFO -- : Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+I, [2016-11-29T14:03:29.685427 #25910]  INFO -- : Started GET "/books/5?response=test" for ::1 at 2016-11-29 14:03:29 +0900
+I, [2016-11-29T14:03:29.688050 #25910]  INFO -- : Processing by BooksController#show as */*
+I, [2016-11-29T14:03:29.688140 #25910]  INFO -- :   Parameters: {"response"=>"test", "id"=>"5"}
+I, [2016-11-29T14:03:29.690526 #25910]  INFO -- : Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+I, [2016-11-29T14:05:07.581515 #25910]  INFO -- : Started GET "/books/5?response=test" for 127.0.0.1 at 2016-11-29 14:05:07 +0900
+I, [2016-11-29T14:05:07.593256 #25910]  INFO -- : Processing by BooksController#show as */*
+I, [2016-11-29T14:05:07.593342 #25910]  INFO -- :   Parameters: {"response"=>"test", "id"=>"5"}
+I, [2016-11-29T14:05:07.599531 #25910]  INFO -- : Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.1ms)
+I, [2016-11-29T14:06:53.726289 #25910]  INFO -- : Started PUT "/books/5?response=test" for 127.0.0.1 at 2016-11-29 14:06:53 +0900
+I, [2016-11-29T14:06:53.729269 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T14:06:53.729359 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample2"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T14:06:53.733994 #25910]  INFO -- : Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 2.3ms)
+I, [2016-11-29T14:07:11.611400 #25910]  INFO -- : Started GET "/books/5?response=test" for 127.0.0.1 at 2016-11-29 14:07:11 +0900
+I, [2016-11-29T14:07:11.612993 #25910]  INFO -- : Processing by BooksController#show as */*
+I, [2016-11-29T14:07:11.613074 #25910]  INFO -- :   Parameters: {"response"=>"test", "id"=>"5"}
+I, [2016-11-29T14:07:11.614328 #25910]  INFO -- : Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T14:08:50.569686 #25910]  INFO -- : Started GET "/books/5/?response=test" for 127.0.0.1 at 2016-11-29 14:08:50 +0900
+I, [2016-11-29T14:08:50.571324 #25910]  INFO -- : Processing by BooksController#show as */*
+I, [2016-11-29T14:08:50.571374 #25910]  INFO -- :   Parameters: {"response"=>"test", "id"=>"5"}
+I, [2016-11-29T14:08:50.572478 #25910]  INFO -- : Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T14:08:59.510374 #25910]  INFO -- : Started GET "/books/5?response=test" for 127.0.0.1 at 2016-11-29 14:08:59 +0900
+I, [2016-11-29T14:08:59.512472 #25910]  INFO -- : Processing by BooksController#show as */*
+I, [2016-11-29T14:08:59.512557 #25910]  INFO -- :   Parameters: {"response"=>"test", "id"=>"5"}
+I, [2016-11-29T14:08:59.514326 #25910]  INFO -- : Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T14:10:22.614603 #25910]  INFO -- : Started GET "/books/5?response=test" for 127.0.0.1 at 2016-11-29 14:10:22 +0900
+I, [2016-11-29T14:10:22.631654 #25910]  INFO -- : Processing by BooksController#show as */*
+I, [2016-11-29T14:10:22.631744 #25910]  INFO -- :   Parameters: {"response"=>"test", "id"=>"5"}
+I, [2016-11-29T14:10:22.640941 #25910]  INFO -- : Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+I, [2016-11-29T14:11:16.856398 #25910]  INFO -- : Started GET "/books/5?response=test" for 127.0.0.1 at 2016-11-29 14:11:16 +0900
+I, [2016-11-29T14:11:16.858885 #25910]  INFO -- : Processing by BooksController#show as */*
+I, [2016-11-29T14:11:16.859025 #25910]  INFO -- :   Parameters: {"response"=>"test", "id"=>"5"}
+I, [2016-11-29T14:11:16.860271 #25910]  INFO -- : Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T14:12:18.957707 #25910]  INFO -- : Started GET "/books/5?response=test" for 127.0.0.1 at 2016-11-29 14:12:18 +0900
+I, [2016-11-29T14:12:18.969760 #25910]  INFO -- : Processing by BooksController#show as */*
+I, [2016-11-29T14:12:18.969819 #25910]  INFO -- :   Parameters: {"response"=>"test", "id"=>"5"}
+I, [2016-11-29T14:12:18.975921 #25910]  INFO -- : Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+I, [2016-11-29T14:12:26.202162 #25910]  INFO -- : Started GET "/books/5" for ::1 at 2016-11-29 14:12:26 +0900
+I, [2016-11-29T14:12:26.203853 #25910]  INFO -- : Processing by BooksController#show as HTML
+I, [2016-11-29T14:12:26.203961 #25910]  INFO -- :   Parameters: {"id"=>"5"}
+I, [2016-11-29T14:12:26.205335 #25910]  INFO -- : Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T14:14:49.488192 #25910]  INFO -- : Started GET "/books?response=test" for ::1 at 2016-11-29 14:14:49 +0900
+I, [2016-11-29T14:14:49.490723 #25910]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T14:14:49.490803 #25910]  INFO -- :   Parameters: {"response"=>"test"}
+I, [2016-11-29T14:14:49.494655 #25910]  INFO -- : Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T14:15:10.571352 #25910]  INFO -- : Started GET "/books?id=5" for ::1 at 2016-11-29 14:15:10 +0900
+I, [2016-11-29T14:15:10.576288 #25910]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T14:15:10.576374 #25910]  INFO -- :   Parameters: {"id"=>"5"}
+I, [2016-11-29T14:15:10.578942 #25910]  INFO -- : Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+I, [2016-11-29T14:21:50.149375 #25910]  INFO -- : Started GET "/books/5?response=test" for ::1 at 2016-11-29 14:21:50 +0900
+I, [2016-11-29T14:21:50.162707 #25910]  INFO -- : Processing by BooksController#show as */*
+I, [2016-11-29T14:21:50.162797 #25910]  INFO -- :   Parameters: {"response"=>"test", "id"=>"5"}
+I, [2016-11-29T14:21:50.168904 #25910]  INFO -- : Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+I, [2016-11-29T14:22:13.310490 #25910]  INFO -- : Started PUT "/books/5" for ::1 at 2016-11-29 14:22:13 +0900
+I, [2016-11-29T14:22:13.313115 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T14:22:13.313197 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample2"}, "id"=>"5"}
+I, [2016-11-29T14:22:13.316497 #25910]  INFO -- : Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 1.0ms)
+I, [2016-11-29T14:22:13.319864 #25910]  INFO -- : Started PUT "/books/5?response=test" for ::1 at 2016-11-29 14:22:13 +0900
+I, [2016-11-29T14:22:13.322240 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T14:22:13.322328 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample2"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T14:22:13.325366 #25910]  INFO -- : Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+I, [2016-11-29T14:22:32.134358 #25910]  INFO -- : Started GET "/books/5?response=test" for ::1 at 2016-11-29 14:22:32 +0900
+I, [2016-11-29T14:22:32.135933 #25910]  INFO -- : Processing by BooksController#show as */*
+I, [2016-11-29T14:22:32.136014 #25910]  INFO -- :   Parameters: {"response"=>"test", "id"=>"5"}
+I, [2016-11-29T14:22:32.137257 #25910]  INFO -- : Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T14:24:56.735625 #25910]  INFO -- : Started GET "/books?id=5" for ::1 at 2016-11-29 14:24:56 +0900
+I, [2016-11-29T14:24:56.738242 #25910]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T14:24:56.738340 #25910]  INFO -- :   Parameters: {"id"=>"5"}
+I, [2016-11-29T14:24:56.739880 #25910]  INFO -- : Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+I, [2016-11-29T14:26:16.959948 #25910]  INFO -- : Started GET "/books?id=5" for ::1 at 2016-11-29 14:26:16 +0900
+I, [2016-11-29T14:26:16.978606 #25910]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T14:26:16.978763 #25910]  INFO -- :   Parameters: {"id"=>"5"}
+I, [2016-11-29T14:26:16.988315 #25910]  INFO -- : Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+I, [2016-11-29T14:26:59.393110 #25910]  INFO -- : Started GET "/books?id=5" for ::1 at 2016-11-29 14:26:59 +0900
+I, [2016-11-29T14:26:59.404625 #25910]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T14:26:59.404682 #25910]  INFO -- :   Parameters: {"id"=>"5"}
+I, [2016-11-29T14:26:59.411453 #25910]  INFO -- : Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+I, [2016-11-29T14:27:24.925107 #25910]  INFO -- : Started GET "/books?id=5" for ::1 at 2016-11-29 14:27:24 +0900
+I, [2016-11-29T14:27:24.940102 #25910]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T14:27:24.940219 #25910]  INFO -- :   Parameters: {"id"=>"5"}
+I, [2016-11-29T14:27:24.946655 #25910]  INFO -- : Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.0ms)
+I, [2016-11-29T14:27:39.215686 #25910]  INFO -- : Started GET "/books?id=5" for ::1 at 2016-11-29 14:27:39 +0900
+I, [2016-11-29T14:27:39.233613 #25910]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T14:27:39.233712 #25910]  INFO -- :   Parameters: {"id"=>"5"}
+I, [2016-11-29T14:27:39.243492 #25910]  INFO -- : Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 1.5ms)
+I, [2016-11-29T14:28:37.353537 #25910]  INFO -- : Started GET "/books?id=5" for ::1 at 2016-11-29 14:28:37 +0900
+I, [2016-11-29T14:28:37.364897 #25910]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T14:28:37.364952 #25910]  INFO -- :   Parameters: {"id"=>"5"}
+I, [2016-11-29T14:28:37.371480 #25910]  INFO -- : Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.0ms)
+I, [2016-11-29T14:30:30.878283 #25910]  INFO -- : Started GET "/books?id=5" for ::1 at 2016-11-29 14:30:30 +0900
+I, [2016-11-29T14:30:30.890932 #25910]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T14:30:30.890987 #25910]  INFO -- :   Parameters: {"id"=>"5"}
+I, [2016-11-29T14:30:30.898237 #25910]  INFO -- : Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 1.2ms)
+I, [2016-11-29T14:31:34.915033 #25910]  INFO -- : Started GET "/books?id=5" for ::1 at 2016-11-29 14:31:34 +0900
+I, [2016-11-29T14:31:34.927818 #25910]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T14:31:34.927924 #25910]  INFO -- :   Parameters: {"id"=>"5"}
+I, [2016-11-29T14:31:34.934960 #25910]  INFO -- : Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.1ms)
+I, [2016-11-29T14:33:25.083497 #25910]  INFO -- : Started GET "/books?id=5" for ::1 at 2016-11-29 14:33:25 +0900
+I, [2016-11-29T14:33:25.098305 #25910]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T14:33:25.098388 #25910]  INFO -- :   Parameters: {"id"=>"5"}
+I, [2016-11-29T14:33:25.105233 #25910]  INFO -- : Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+I, [2016-11-29T14:34:02.594620 #25910]  INFO -- : Started GET "/books?id=5" for ::1 at 2016-11-29 14:34:02 +0900
+I, [2016-11-29T14:34:02.606471 #25910]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T14:34:02.606555 #25910]  INFO -- :   Parameters: {"id"=>"5"}
+I, [2016-11-29T14:34:02.613149 #25910]  INFO -- : Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.1ms)
+I, [2016-11-29T14:34:11.560213 #25910]  INFO -- : Started GET "/books?id=5" for ::1 at 2016-11-29 14:34:11 +0900
+I, [2016-11-29T14:34:11.562051 #25910]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T14:34:11.562153 #25910]  INFO -- :   Parameters: {"id"=>"5"}
+I, [2016-11-29T14:34:11.563961 #25910]  INFO -- : Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T14:34:28.977298 #25910]  INFO -- : Started GET "/books?id=5" for ::1 at 2016-11-29 14:34:28 +0900
+I, [2016-11-29T14:34:28.978905 #25910]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T14:34:28.978976 #25910]  INFO -- :   Parameters: {"id"=>"5"}
+I, [2016-11-29T14:34:28.980500 #25910]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T14:35:01.413644 #25910]  INFO -- : Started GET "/books?id=5" for ::1 at 2016-11-29 14:35:01 +0900
+I, [2016-11-29T14:35:01.424996 #25910]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T14:35:01.425077 #25910]  INFO -- :   Parameters: {"id"=>"5"}
+I, [2016-11-29T14:35:01.431448 #25910]  INFO -- : Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.1ms)
+I, [2016-11-29T14:38:54.258936 #25910]  INFO -- : Started GET "/books?id=5" for ::1 at 2016-11-29 14:38:54 +0900
+I, [2016-11-29T14:38:54.272817 #25910]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T14:38:54.272905 #25910]  INFO -- :   Parameters: {"id"=>"5"}
+I, [2016-11-29T14:38:54.279495 #25910]  INFO -- : Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+I, [2016-11-29T14:41:38.348999 #25910]  INFO -- : Started GET "/books?id=5" for ::1 at 2016-11-29 14:41:38 +0900
+I, [2016-11-29T14:41:38.350600 #25910]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T14:41:38.350649 #25910]  INFO -- :   Parameters: {"id"=>"5"}
+I, [2016-11-29T14:41:38.351798 #25910]  INFO -- : Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T14:42:05.393303 #25910]  INFO -- : Started GET "/books?id=5&response=test" for ::1 at 2016-11-29 14:42:05 +0900
+I, [2016-11-29T14:42:05.394761 #25910]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T14:42:05.394812 #25910]  INFO -- :   Parameters: {"id"=>"5", "response"=>"test"}
+I, [2016-11-29T14:42:05.395905 #25910]  INFO -- : Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T14:45:47.742021 #25910]  INFO -- : Started GET "/books?id=5&response=test" for ::1 at 2016-11-29 14:45:47 +0900
+I, [2016-11-29T14:45:47.753605 #25910]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T14:45:47.753664 #25910]  INFO -- :   Parameters: {"id"=>"5", "response"=>"test"}
+I, [2016-11-29T14:45:47.759572 #25910]  INFO -- : Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+I, [2016-11-29T14:46:57.510502 #25910]  INFO -- : Started POST "/books/5?response=test" for ::1 at 2016-11-29 14:46:57 +0900
+F, [2016-11-29T14:46:57.512435 #25910] FATAL -- : 
+ActionController::RoutingError (No route matches [POST] "/books/5"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  magellan-rails (0.2.4) lib/magellan/extentions/rails/application.rb:41:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+I, [2016-11-29T14:46:57.557881 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+I, [2016-11-29T14:46:57.574279 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+I, [2016-11-29T14:46:57.593807 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+I, [2016-11-29T14:46:57.611033 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+I, [2016-11-29T14:46:57.611151 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (71.8ms)
+I, [2016-11-29T14:47:21.508383 #25910]  INFO -- : Started GET "/books/5" for ::1 at 2016-11-29 14:47:21 +0900
+I, [2016-11-29T14:47:21.561449 #25910]  INFO -- : Processing by BooksController#show as HTML
+I, [2016-11-29T14:47:21.561505 #25910]  INFO -- :   Parameters: {"id"=>"5"}
+I, [2016-11-29T14:47:21.562546 #25910]  INFO -- : Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms)
+F, [2016-11-29T14:47:21.563158 #25910] FATAL -- : 
+JSON::ParserError (784: unexpected token at 'null'):
+  app/controllers/books_controller.rb:66:in `add_query_parameter_and_request_header'
+  app/controllers/books_controller.rb:19:in `show'
+
+
+I, [2016-11-29T14:47:21.702114 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+I, [2016-11-29T14:47:21.716996 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+I, [2016-11-29T14:47:21.731821 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2016-11-29T14:47:21.731976 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.2ms)
+I, [2016-11-29T14:47:24.402636 #25910]  INFO -- : Started GET "/books/" for ::1 at 2016-11-29 14:47:24 +0900
+I, [2016-11-29T14:47:24.404264 #25910]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T14:47:24.408170 #25910]  INFO -- : Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T14:47:29.272418 #25910]  INFO -- : Started GET "/books/5" for ::1 at 2016-11-29 14:47:29 +0900
+I, [2016-11-29T14:47:29.274073 #25910]  INFO -- : Processing by BooksController#show as HTML
+I, [2016-11-29T14:47:29.274154 #25910]  INFO -- :   Parameters: {"id"=>"5"}
+I, [2016-11-29T14:47:29.275112 #25910]  INFO -- : Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms)
+F, [2016-11-29T14:47:29.275827 #25910] FATAL -- : 
+JSON::ParserError (784: unexpected token at 'null'):
+  app/controllers/books_controller.rb:66:in `add_query_parameter_and_request_header'
+  app/controllers/books_controller.rb:19:in `show'
+
+
+I, [2016-11-29T14:47:29.355444 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+I, [2016-11-29T14:47:29.370615 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+I, [2016-11-29T14:47:29.390016 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+I, [2016-11-29T14:47:29.390188 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.0ms)
+I, [2016-11-29T14:48:03.039267 #25910]  INFO -- : Started GET "/books/5" for ::1 at 2016-11-29 14:48:03 +0900
+I, [2016-11-29T14:48:03.051389 #25910]  INFO -- : Processing by BooksController#show as HTML
+I, [2016-11-29T14:48:03.051447 #25910]  INFO -- :   Parameters: {"id"=>"5"}
+I, [2016-11-29T14:48:03.057266 #25910]  INFO -- : Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+I, [2016-11-29T14:48:07.440243 #25910]  INFO -- : Started POST "/books/5?response=test" for ::1 at 2016-11-29 14:48:07 +0900
+F, [2016-11-29T14:48:07.443270 #25910] FATAL -- : 
+ActionController::RoutingError (No route matches [POST] "/books/5"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  magellan-rails (0.2.4) lib/magellan/extentions/rails/application.rb:41:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+I, [2016-11-29T14:48:07.493907 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+I, [2016-11-29T14:48:07.512095 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+I, [2016-11-29T14:48:07.527526 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+I, [2016-11-29T14:48:07.547869 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+I, [2016-11-29T14:48:07.548132 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (78.3ms)
+I, [2016-11-29T14:48:09.610065 #25910]  INFO -- : Started POST "/books/5?response=test" for ::1 at 2016-11-29 14:48:09 +0900
+F, [2016-11-29T14:48:09.611649 #25910] FATAL -- : 
+ActionController::RoutingError (No route matches [POST] "/books/5"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  magellan-rails (0.2.4) lib/magellan/extentions/rails/application.rb:41:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+I, [2016-11-29T14:48:09.648531 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+I, [2016-11-29T14:48:09.663166 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+I, [2016-11-29T14:48:09.682336 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+I, [2016-11-29T14:48:09.697843 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+I, [2016-11-29T14:48:09.697974 #25910]  INFO -- :   Rendered /Users/takeru/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (65.2ms)
+I, [2016-11-29T14:48:12.940792 #25910]  INFO -- : Started GET "/books/5" for ::1 at 2016-11-29 14:48:12 +0900
+I, [2016-11-29T14:48:12.942528 #25910]  INFO -- : Processing by BooksController#show as HTML
+I, [2016-11-29T14:48:12.942625 #25910]  INFO -- :   Parameters: {"id"=>"5"}
+I, [2016-11-29T14:48:12.943893 #25910]  INFO -- : Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T14:48:41.666158 #25910]  INFO -- : Started POST "/books?response=test" for ::1 at 2016-11-29 14:48:41 +0900
+I, [2016-11-29T14:48:41.667822 #25910]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T14:48:41.667902 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample2"}, "response"=>"test"}
+I, [2016-11-29T14:48:41.673092 #25910]  INFO -- : Completed 201 Created in 5ms (Views: 1.2ms | ActiveRecord: 1.7ms)
+I, [2016-11-29T14:49:14.392540 #25910]  INFO -- : Started PUT "/books/5?response=test" for ::1 at 2016-11-29 14:49:14 +0900
+I, [2016-11-29T14:49:14.394366 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T14:49:14.394464 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample2"}, "response"=>"test", "id"=>"5"}
+I, [2016-11-29T14:49:14.396562 #25910]  INFO -- : Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+I, [2016-11-29T14:50:23.145158 #25910]  INFO -- : Started DELETE "/books/24?response=test" for ::1 at 2016-11-29 14:50:23 +0900
+I, [2016-11-29T14:50:23.147069 #25910]  INFO -- : Processing by BooksController#destroy as */*
+I, [2016-11-29T14:50:23.147155 #25910]  INFO -- :   Parameters: {"response"=>"test", "id"=>"24"}
+I, [2016-11-29T14:50:23.184929 #25910]  INFO -- : Completed 200 OK in 38ms (Views: 0.1ms | ActiveRecord: 36.1ms)
+I, [2016-11-29T14:57:03.179895 #25910]  INFO -- : Started POST "/books?response=test" for ::1 at 2016-11-29 14:57:03 +0900
+I, [2016-11-29T14:57:03.182461 #25910]  INFO -- : Processing by BooksController#create as */*
+I, [2016-11-29T14:57:03.182646 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample2"}, "response"=>"test"}
+I, [2016-11-29T14:57:03.186878 #25910]  INFO -- : Completed 201 Created in 4ms (Views: 0.7ms | ActiveRecord: 0.9ms)
+I, [2016-11-29T14:57:43.851114 #25910]  INFO -- : Started PUT "/books/5?response=test_in_container.sh" for ::1 at 2016-11-29 14:57:43 +0900
+I, [2016-11-29T14:57:43.856008 #25910]  INFO -- : Processing by BooksController#update as */*
+I, [2016-11-29T14:57:43.856266 #25910]  INFO -- :   Parameters: {"book"=>{"title"=>"Sample2"}, "response"=>"test_in_container.sh", "id"=>"5"}
+I, [2016-11-29T14:57:43.859462 #25910]  INFO -- : Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+I, [2016-11-29T14:58:06.966960 #25910]  INFO -- : Started GET "/books/5?response=test" for ::1 at 2016-11-29 14:58:06 +0900
+I, [2016-11-29T14:58:06.968467 #25910]  INFO -- : Processing by BooksController#show as */*
+I, [2016-11-29T14:58:06.968545 #25910]  INFO -- :   Parameters: {"response"=>"test", "id"=>"5"}
+I, [2016-11-29T14:58:06.970158 #25910]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T14:58:23.368690 #25910]  INFO -- : Started GET "/books?id=10" for ::1 at 2016-11-29 14:58:23 +0900
+I, [2016-11-29T14:58:23.370430 #25910]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T14:58:23.370504 #25910]  INFO -- :   Parameters: {"id"=>"10"}
+I, [2016-11-29T14:58:23.372092 #25910]  INFO -- : Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T14:58:54.647899 #25910]  INFO -- : Started GET "/books/5?response=test" for ::1 at 2016-11-29 14:58:54 +0900
+I, [2016-11-29T14:58:54.649606 #25910]  INFO -- : Processing by BooksController#show as */*
+I, [2016-11-29T14:58:54.649690 #25910]  INFO -- :   Parameters: {"response"=>"test", "id"=>"5"}
+I, [2016-11-29T14:58:54.651047 #25910]  INFO -- : Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T17:43:20.733508 #37788]  INFO -- : Started GET "/books" for ::1 at 2016-11-29 17:43:20 +0900
+I, [2016-11-29T17:43:21.212913 #37788]  INFO -- : Processing by BooksController#index as HTML
+I, [2016-11-29T17:43:21.225618 #37788]  INFO -- : Completed 200 OK in 12ms (Views: 7.7ms | ActiveRecord: 2.1ms)
+I, [2016-11-29T17:43:41.186594 #37788]  INFO -- : Started GET "/books?id=10" for ::1 at 2016-11-29 17:43:41 +0900
+I, [2016-11-29T17:43:41.188426 #37788]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T17:43:41.188520 #37788]  INFO -- :   Parameters: {"id"=>"10"}
+I, [2016-11-29T17:43:41.226463 #37788]  INFO -- : Completed 200 OK in 38ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+I, [2016-11-29T17:44:19.633274 #37788]  INFO -- : Started GET "/books?id=10" for ::1 at 2016-11-29 17:44:19 +0900
+I, [2016-11-29T17:44:19.635528 #37788]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T17:44:19.635630 #37788]  INFO -- :   Parameters: {"id"=>"10"}
+I, [2016-11-29T17:44:19.637305 #37788]  INFO -- : Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+I, [2016-11-29T17:44:24.094577 #37788]  INFO -- : Started GET "/books?id=10" for ::1 at 2016-11-29 17:44:24 +0900
+I, [2016-11-29T17:44:24.096305 #37788]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T17:44:24.096383 #37788]  INFO -- :   Parameters: {"id"=>"10"}
+I, [2016-11-29T17:44:24.097630 #37788]  INFO -- : Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T18:11:39.092224 #37788]  INFO -- : Started GET "/books?id=10" for ::1 at 2016-11-29 18:11:39 +0900
+I, [2016-11-29T18:11:39.095131 #37788]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T18:11:39.095226 #37788]  INFO -- :   Parameters: {"id"=>"10"}
+I, [2016-11-29T18:11:39.097526 #37788]  INFO -- : Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+I, [2016-11-29T18:14:26.047813 #37788]  INFO -- : Started GET "/books?id=10" for ::1 at 2016-11-29 18:14:26 +0900
+I, [2016-11-29T18:14:26.049343 #37788]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T18:14:26.049409 #37788]  INFO -- :   Parameters: {"id"=>"10"}
+I, [2016-11-29T18:14:26.050677 #37788]  INFO -- : Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T18:14:35.620294 #37788]  INFO -- : Started GET "/books?id=10" for ::1 at 2016-11-29 18:14:35 +0900
+I, [2016-11-29T18:14:35.622177 #37788]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T18:14:35.622259 #37788]  INFO -- :   Parameters: {"id"=>"10"}
+I, [2016-11-29T18:14:35.623440 #37788]  INFO -- : Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+I, [2016-11-29T18:16:13.353500 #37788]  INFO -- : Started GET "/books?id=10" for ::1 at 2016-11-29 18:16:13 +0900
+I, [2016-11-29T18:16:13.377138 #37788]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T18:16:13.377193 #37788]  INFO -- :   Parameters: {"id"=>"10"}
+I, [2016-11-29T18:16:13.383428 #37788]  INFO -- : Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+I, [2016-11-29T18:17:38.502859 #37788]  INFO -- : Started GET "/books?id=10" for ::1 at 2016-11-29 18:17:38 +0900
+I, [2016-11-29T18:17:38.519470 #37788]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T18:17:38.519559 #37788]  INFO -- :   Parameters: {"id"=>"10"}
+I, [2016-11-29T18:17:38.527347 #37788]  INFO -- : Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+I, [2016-11-29T18:17:44.658040 #37788]  INFO -- : Started GET "/books?id=10" for ::1 at 2016-11-29 18:17:44 +0900
+I, [2016-11-29T18:17:44.659615 #37788]  INFO -- : Processing by BooksController#index as */*
+I, [2016-11-29T18:17:44.659712 #37788]  INFO -- :   Parameters: {"id"=>"10"}
+I, [2016-11-29T18:17:44.661651 #37788]  INFO -- : Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.3ms)
