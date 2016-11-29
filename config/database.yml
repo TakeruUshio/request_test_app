@@ -15,9 +15,9 @@ test:
   database: app1_test
 
 production:
-  <<: *default
-  host: <%= ENV['MYSQL_HOST'] %>
-  port: <%= ENV['MYSQL_PORT'] %>
-  database: <%= ENV['MYSQL_DATABASE'] %>
-  username: <%= ENV['MYSQL_USERNAME'] %>
-  password: <%= ENV['MYSQL_PASSWORD'] %>
+ <<: *default
+ adapter: postgresql
+ encoding: unicode
+ pool: 5
+
+

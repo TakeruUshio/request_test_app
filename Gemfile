@@ -9,6 +9,10 @@ gem 'spring', :group => :development
 
 gem 'mysql2', '~> 0.3.20'
 
+gem 'sqlite3', group: :development
+# 本番ではpostgressを使用する
+gem 'pg', group: :production
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
 end
